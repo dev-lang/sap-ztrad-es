@@ -75,6 +75,7 @@ D021T  SAPLSHSY|0700|SHTEXT-AUS4    13      Database data   Datos BD
 - `MAXLEN` es el largo máximo del campo. El import rechaza (y cuenta como error) los textos más largos.
 - Las filas con `ES` vacío o igual a `EN` se descartan en el import (salvo `ZTRAD_LXE` con `P_SAME`, y `ZTRAD_MULTI`, que las graba para crear la fila ES si falta).
 - Hay que conservar los marcadores: `&`, `&1`…`&4`, `@..@` (iconos), espacios iniciales de columnas alineadas.
+- En T100 algunos mensajes tienen `&` seguido de otro carácter (p. ej. `&!`) o un `|` en el texto (p. ej. `Obj:&1|&2`): se copian tal cual. El `|` dentro del texto no rompe el import; solo rompe si está en la columna `KEY` (ver RSMPTEXTS).
 
 ---
 
@@ -137,6 +138,10 @@ Ejemplos de `R_GEN` usados:
 | `DD30T` | `DDTEXT` | `DDLANGUAGE` | Ayudas para búsqueda |
 
 **Import:** lee la fila EN por clave, toma la fila ES si ya existe (para no pisar otros campos), cambia el idioma y el texto y hace `MODIFY`. Descarta las filas con ES vacío o igual a EN (si hace falta forzar un texto igual al inglés, se pone en la columna `EN` el valor que tiene hoy en ES).
+
+**Tiempos de referencia (`R_T100` por el servicio):** un lote de ~1.600 filas tarda unos 20 s entre test y real; lotes de 3.000+ filas también entran sin problema.
+
+**Cuidado:** si en un import se omite `r_exp=&r_imp=X`, el programa corre en modo **export** y **sobrescribe el archivo `p_srv`** (el lote traducido se pierde). Mandar siempre los dos radiobuttons.
 
 **Cuidado:** en `RSMPTEXTS` hay códigos de función que contienen `|` y rompen la clave; esas filas hay que sacarlas del lote.
 
@@ -220,6 +225,8 @@ Busca un texto (con comodines a ambos lados) para saber qué objeto hay que trad
 Vuelca cualquier tabla (`P_TAB`) con un `WHERE` opcional (`P_WHERE`, SQL abierto dinámico) a un TSV UTF-8 con encabezado de columnas. Útil para medir qué falta traducir o verificar un import (por ejemplo, `DD04T` con `DDLANGUAGE = 'S'`).
 
 `P_MEM` / `P_SRV` agregados en `_final`.
+
+**`P_WHERE`:** conviene usar `LIKE` en vez de varios `OR` o listas `IN` largas. Con `OR` el SQL dinámico fallaba con `SAPSQL_WHERE_QUOTES`. Ejemplo: `OBJECT = 'MSAG'` o `OBJ_NAME LIKE 'S%'` en lugar de `OBJ_NAME = 'SA' OR OBJ_NAME = 'SB' OR ...`.
 
 ---
 
@@ -310,3 +317,5 @@ En los radiobuttons hay que mandar **los dos** del grupo (uno con `X` y el otro 
 | Popup "Seguridad SAP GUI" en cada lectura/escritura de archivo con `P_FILE` | Permitir, o usar `P_SRV` |
 | `STRING_LENGTH_TOO_LARGE` al importar RSMPTEXTS | Filas con `\|` dentro del código de función: sacarlas del lote |
 | En SE16N no aparece nada con idioma `S` | En SE16N el idioma va en formato externo: `ES` |
+| Un import por el servicio pisó el lote traducido | Faltaba `r_exp=&r_imp=X` y corrió como export sobre `p_srv`: mandar siempre los dos radiobuttons; tener copia de los lotes |
+| Job de ZTRAD_TABDUMP cancelado con `SAPSQL_WHERE_QUOTES` | Pasa con `P_WHERE` que une condiciones con `OR`; alcanzan dos (tr48, 15/11). Por ejemplo, en vez de `OBJ_NAME = 'SAPLSHSY' OR OBJ_NAME = 'SAPLSHSZ'` usar `OBJ_NAME LIKE 'SAPLSHS%'` y filtrar el sobrante en el TSV. Si los valores no comparten un prefijo, correr ZTRAD_TABDUMP una vez por valor (`OBJ_NAME = 'A'`, después `OBJ_NAME = 'B'`, cada uno a su archivo) y juntar los TSV. `P_WHERE` admite hasta 200 caracteres. |
