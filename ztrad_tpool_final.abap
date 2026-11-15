@@ -210,7 +210,7 @@ FORM import.
     ENDIF.
     ADD 1 TO lv_ok.
     IF p_test = 'X'.
-      WRITE: / ls_upd-prog, ls_upd-id, ls_upd-key, ls_upd-es(60).
+      WRITE: / ls_upd-prog, ls_upd-id, ls_upd-key, ls_upd-es.
     ENDIF.
   ENDLOOP.
   IF lv_prev IS NOT INITIAL AND p_test IS INITIAL.
