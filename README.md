@@ -31,6 +31,7 @@ Probado en **SAP ECC 6.0 EHP6** (SAP_BASIS 731, kernel 722, Unicode) sobre **Syb
 | [`ztrad_txttab_final.abap`](#ztrad_txttab) | Report `ZTRAD_TXTTAB` | Tablas de texto: T100, IMG (`CUS_IMGACT`, `TNODEIMGT`), `TSTCT` y cualquier tabla genérica (D021T, DD01T, DD02T, DD07T, DD30T, RSMPTEXTS…) |
 | [`ztrad_multi_final.abap`](#ztrad_multi) | Report `ZTRAD_MULTI` | Varias tablas de texto a la vez (todas las columnas de texto de cada tabla) |
 | [`ztrad_tpool_final.abap`](#ztrad_tpool) | Report `ZTRAD_TPOOL` | Pools de textos de programas con `READ/INSERT TEXTPOOL`, para lo que LXE no cubre |
+| [`ztrad_doku_final.abap`](#ztrad_doku) | Report `ZTRAD_DOKU` | Documentación SE61/DOKU (ayuda F1 de elementos de datos y otros textos largos) con `DOCU_GET`/`DOCU_UPDATE` |
 | [`ztrad_findtxt_final.abap`](#ztrad_findtxt) | Report `ZTRAD_FINDTXT` | Busca en qué objeto está guardado un texto que se ve en pantalla |
 | [`ztrad_tabdump_final.abap`](#ztrad_tabdump) | Report `ZTRAD_TABDUMP` | Vuelca cualquier tabla a un TSV |
 | [`ztrad_dynp_del_final.abap`](#ztrad_dynp_del) | Report `ZTRAD_DYNP_DEL` | Borra las cargas de textos de pantalla (`DYNPTXTLD`) de un idioma |
@@ -179,6 +180,26 @@ Lee y escribe directamente con `READ TEXTPOOL` / `INSERT TEXTPOOL` (títulos, te
 ---
 
 <a id="ztrad_findtxt"></a>
+## ZTRAD_DOKU: documentación (ayuda F1)
+
+<a id="ztrad_doku"></a>Exporta e importa textos largos de documentación (tablas DOKHL/DOKIL/DOKTL), por defecto `ID = 'DE'` (la ayuda F1 de los elementos de datos).
+
+| Parámetro | Descripción |
+|---|---|
+| `S_OBJ` | Objetos (nombre del elemento de datos, mensaje, etc.; admite `*`) |
+| `P_ID` | ID de documentación (`DE` por defecto; `NA` mensajes, `RE` informes…) |
+| `R_EXP` / `R_IMP` | Export o import |
+| `P_TEST` | Import en modo test (no graba) |
+| `P_ALL` | Export también de los objetos que ya tienen versión ES |
+| `P_FILE` | Archivo en la PC (modo SAP GUI) |
+| `P_MEM` / `P_SRV` | Ocultos, ver arriba |
+
+**Formato:** `ID OBJECT LINE FORMAT EN ES`, una fila por línea SAPscript (`TLINE`). En el import, el programa ordena el archivo, junta las filas por `ID`+`OBJECT` y graba las líneas en ese orden con `FORMAT` + `ES` (`DOCU_UPDATE`, idioma S, versión ES existente o 1). Se pueden agregar o quitar líneas al traducir (por ejemplo, para reacomodar un párrafo): solo cuenta el orden de `LINE`. `ES` vacío es una línea vacía; `#DEL` descarta la fila. Líneas de más de 132 caracteres marcan el documento como error.
+
+Conviene traducir por párrafo (una línea con formato seguida de sus líneas de continuación con formato vacío, `=` o `/`) y respetar las etiquetas `<DS:…>`, `<GL:…>`, `<ZH>`, `<LS>` y los símbolos `&DEFINITION&`, `&USE&`, etc.
+
+Nota: `DOCU_UPDATE` deja `DOKIL-MASTERLANG = 'X'` en la versión ES; no afecta la ayuda F1.
+
 ## ZTRAD_FINDTXT: dónde está guardado un texto
 
 Busca un texto (con comodines a ambos lados) para saber qué objeto hay que traducir. Solo lectura; el resultado sale en la lista.
