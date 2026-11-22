@@ -220,7 +220,7 @@ Nota: `DOCU_UPDATE` deja `DOKIL-MASTERLANG = 'X'` en la versión ES; no afecta l
 
 **Formato:** `ID OBJECT` (TSV con fila de títulos). El resultado informa documentos leídos, documentos con versión ES borrada (con las filas S de cada tabla), sin versión ES y errores. Hace `COMMIT WORK` por documento. Para verificar, volver a correrlo en modo test: todos deben quedar como "Sin version ES". Conviene probar antes con un archivo de un solo documento y revisar en SE61 que la versión EN siga existiendo.
 
-Por el servicio HTTP: `/zztrad/run?prog=ZTRAD_DOKU_DEL&p_test=X&p_srv=rfcimport\\lista.txt`.
+Por el servicio HTTP: `/zztrad/run?prog=ZTRAD_DOKU_DEL&p_test=X&p_srv=rfcimport\lista.txt`.
 
 ## ZTRAD_FINDTXT: dónde está guardado un texto
 
