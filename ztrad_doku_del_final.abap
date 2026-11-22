@@ -11,6 +11,8 @@ REPORT ztrad_doku_del.
 *   despues que las filas de los demas idiomas no cambien; si cambian,
 *   hace ROLLBACK de ese documento y lo informa como error.
 * P_TEST = X: solo cuenta, no borra nada.
+* v2.1: fila de titulos detectada por OBJECT (BOM en modo SAP GUI) y
+*   aviso de documentos que solo tenian version ES.
 * P_SRV (oculto): ruta relativa a C:\Users\user\Documents\ztrad_rfc_files\
 *----------------------------------------------------------------------*
 DATA: gt_file TYPE STANDARD TABLE OF string,
@@ -58,6 +60,7 @@ FORM run.
         lv_none TYPE i,
         lv_err  TYPE i,
         lv_n    TYPE i,
+        lv_only TYPE i,
         lv_rhl  TYPE i,
         lv_ril  TYPE i,
         lv_rtl  TYPE i.
@@ -74,7 +77,8 @@ FORM run.
     CHECK gv_row IS NOT INITIAL.
     CLEAR: lv_s1, lv_s2.
     SPLIT gv_row AT gv_tab INTO lv_s1 lv_s2.
-    CHECK lv_s1 <> 'ID'.
+*   Fila de titulos (en modo SAP GUI puede venir con BOM delante de ID)
+    CHECK lv_s2 <> 'OBJECT'.
     lv_id  = lv_s1.
     lv_obj = lv_s2.
     ADD 1 TO lv_n.
@@ -91,6 +95,12 @@ FORM run.
     ENDIF.
 
     PERFORM count_other USING lv_id lv_obj CHANGING lv_oth1.
+    IF lv_oth1 = 0.
+*     Solo existe en ES (p. ej. documentacion propia creada en S):
+*     se borra igual, pero se informa para revisarlo.
+      WRITE: / 'Aviso: solo tenia version ES:', lv_id, lv_obj.
+      ADD 1 TO lv_only.
+    ENDIF.
 
     IF p_test IS INITIAL.
       DELETE FROM doktl WHERE id = lv_id AND object = lv_obj AND langu = 'S'.
@@ -113,6 +123,7 @@ FORM run.
 
   WRITE: / 'Documentos leidos:', lv_n,
          / 'Documentos con version ES borrada:', lv_ok,
+         / '  de esos, solo tenian version ES:', lv_only,
          / '  filas DOKHL/DOKIL/DOKTL (S):', lv_rhl, lv_ril, lv_rtl,
          / 'Sin version ES (nada que borrar):', lv_none,
          / 'Errores:', lv_err.
