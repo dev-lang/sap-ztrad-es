@@ -1,10 +1,16 @@
 REPORT ztrad_doku_del.
 *----------------------------------------------------------------------*
-* Reversion de la ayuda F1 traducida: borra la version ES (idioma S)
-* de los documentos DOKU listados en el archivo.
+* Reversion de la ayuda F1 traducida: borra SOLO la version ES
+* (idioma S) de los documentos DOKU listados en el archivo.
 * Archivo (TSV, UTF-8 con BOM, CRLF): ID <tab> OBJECT  (1a fila = titulo)
-* Solo toca idioma S. No toca la version EN ni otros idiomas.
-* P_TEST = X: solo cuenta cuantos documentos S existen, no borra nada.
+*
+* v2 (22/11/2026): ya NO usa DOCU_DEL. DOCU_DEL borra el documento en
+*   TODOS los idiomas aunque se le pase LANGU = 'S' (v1 borro asi la
+*   version EN y DE de 26.613 documentos). Ahora borra directamente las
+*   filas de DOKHL, DOKIL y DOKTL con LANGU = 'S', y controla antes y
+*   despues que las filas de los demas idiomas no cambien; si cambian,
+*   hace ROLLBACK de ese documento y lo informa como error.
+* P_TEST = X: solo cuenta, no borra nada.
 * P_SRV (oculto): ruta relativa a C:\Users\user\Documents\ztrad_rfc_files\
 *----------------------------------------------------------------------*
 DATA: gt_file TYPE STANDARD TABLE OF string,
@@ -21,17 +27,40 @@ START-OF-SELECTION.
   gv_tab = cl_abap_char_utilities=>horizontal_tab.
   PERFORM run.
 
+FORM count_other USING pv_id  TYPE dokhl-id
+                       pv_obj TYPE dokhl-object
+                 CHANGING cv_n TYPE i.
+  DATA lv_c TYPE i.
+  CLEAR cv_n.
+  SELECT COUNT(*) FROM dokhl INTO lv_c
+    WHERE id = pv_id AND object = pv_obj AND langu <> 'S'.
+  cv_n = cv_n + lv_c.
+  SELECT COUNT(*) FROM dokil INTO lv_c
+    WHERE id = pv_id AND object = pv_obj AND langu <> 'S'.
+  cv_n = cv_n + lv_c.
+  SELECT COUNT(*) FROM doktl INTO lv_c
+    WHERE id = pv_id AND object = pv_obj AND langu <> 'S'.
+  cv_n = cv_n + lv_c.
+ENDFORM.
+
 FORM run.
   DATA: lv_rc   TYPE i,
         lv_s1   TYPE string,
         lv_s2   TYPE string,
         lv_id   TYPE dokhl-id,
         lv_obj  TYPE dokhl-object,
-        lv_cnt  TYPE i,
+        lv_hl   TYPE i,
+        lv_il   TYPE i,
+        lv_tl   TYPE i,
+        lv_oth1 TYPE i,
+        lv_oth2 TYPE i,
         lv_ok   TYPE i,
         lv_none TYPE i,
         lv_err  TYPE i,
-        lv_n    TYPE i.
+        lv_n    TYPE i,
+        lv_rhl  TYPE i,
+        lv_ril  TYPE i,
+        lv_rtl  TYPE i.
 
   PERFORM file_read CHANGING lv_rc.
   IF lv_rc <> 0.
@@ -50,43 +79,45 @@ FORM run.
     lv_obj = lv_s2.
     ADD 1 TO lv_n.
 
-    SELECT COUNT(*) FROM dokhl INTO lv_cnt
+    SELECT COUNT(*) FROM dokhl INTO lv_hl
       WHERE id = lv_id AND object = lv_obj AND langu = 'S'.
-    IF lv_cnt = 0.
+    SELECT COUNT(*) FROM dokil INTO lv_il
+      WHERE id = lv_id AND object = lv_obj AND langu = 'S'.
+    SELECT COUNT(*) FROM doktl INTO lv_tl
+      WHERE id = lv_id AND object = lv_obj AND langu = 'S'.
+    IF lv_hl = 0 AND lv_il = 0 AND lv_tl = 0.
       ADD 1 TO lv_none.
       CONTINUE.
     ENDIF.
 
+    PERFORM count_other USING lv_id lv_obj CHANGING lv_oth1.
+
     IF p_test IS INITIAL.
-      CALL FUNCTION 'DOCU_DEL'
-        EXPORTING
-          id     = lv_id
-          langu  = 'S'
-          object = lv_obj
-          typ    = 'E'
-        EXCEPTIONS
-          OTHERS = 1.
-      IF sy-subrc <> 0.
-        WRITE: / 'Error DOCU_DEL:', lv_id, lv_obj, sy-subrc.
+      DELETE FROM doktl WHERE id = lv_id AND object = lv_obj AND langu = 'S'.
+      DELETE FROM dokil WHERE id = lv_id AND object = lv_obj AND langu = 'S'.
+      DELETE FROM dokhl WHERE id = lv_id AND object = lv_obj AND langu = 'S'.
+      PERFORM count_other USING lv_id lv_obj CHANGING lv_oth2.
+      IF lv_oth2 <> lv_oth1.
+        ROLLBACK WORK.
+        WRITE: / 'ERROR: cambiaron otros idiomas, se deshizo:', lv_id, lv_obj.
         ADD 1 TO lv_err.
         CONTINUE.
       ENDIF.
-      IF lv_ok MOD 1000 = 999.
-        COMMIT WORK.
-      ENDIF.
+      COMMIT WORK.
     ENDIF.
     ADD 1 TO lv_ok.
+    lv_rhl = lv_rhl + lv_hl.
+    lv_ril = lv_ril + lv_il.
+    lv_rtl = lv_rtl + lv_tl.
   ENDLOOP.
 
-  IF p_test IS INITIAL.
-    COMMIT WORK.
-  ENDIF.
   WRITE: / 'Documentos leidos:', lv_n,
-         / 'Documentos ES borrados:', lv_ok,
+         / 'Documentos con version ES borrada:', lv_ok,
+         / '  filas DOKHL/DOKIL/DOKTL (S):', lv_rhl, lv_ril, lv_rtl,
          / 'Sin version ES (nada que borrar):', lv_none,
          / 'Errores:', lv_err.
   IF p_test = 'X'.
-    WRITE: / '(modo prueba: "borrados" = los que se borrarian)'.
+    WRITE: / '(modo prueba: "borrada" = lo que se borraria)'.
   ENDIF.
 ENDFORM.
 

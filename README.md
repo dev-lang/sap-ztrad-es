@@ -32,7 +32,7 @@ Probado en **SAP ECC 6.0 EHP6** (SAP_BASIS 731, kernel 722, Unicode) sobre **Syb
 | [`ztrad_multi_final.abap`](#ztrad_multi) | Report `ZTRAD_MULTI` | Varias tablas de texto a la vez (todas las columnas de texto de cada tabla) |
 | [`ztrad_tpool_final.abap`](#ztrad_tpool) | Report `ZTRAD_TPOOL` | Pools de textos de programas con `READ/INSERT TEXTPOOL`, para lo que LXE no cubre |
 | [`ztrad_doku_final.abap`](#ztrad_doku) | Report `ZTRAD_DOKU` | Documentación SE61/DOKU (ayuda F1 de elementos de datos y otros textos largos) con `DOCU_GET`/`DOCU_UPDATE` |
-| [`ztrad_doku_del_final.abap`](#ztrad_doku_del) | Report `ZTRAD_DOKU_DEL` | Borra la versión ES (idioma S) de una lista de documentos DOKU, para revertir la ayuda F1 traducida |
+| [`ztrad_doku_del_final.abap`](#ztrad_doku_del) | Report `ZTRAD_DOKU_DEL` | Borra solo la versión ES (idioma S) de una lista de documentos DOKU, para revertir la ayuda F1 traducida |
 | [`ztrad_findtxt_final.abap`](#ztrad_findtxt) | Report `ZTRAD_FINDTXT` | Busca en qué objeto está guardado un texto que se ve en pantalla |
 | [`ztrad_tabdump_final.abap`](#ztrad_tabdump) | Report `ZTRAD_TABDUMP` | Vuelca cualquier tabla a un TSV |
 | [`ztrad_dynp_del_final.abap`](#ztrad_dynp_del) | Report `ZTRAD_DYNP_DEL` | Borra las cargas de textos de pantalla (`DYNPTXTLD`) de un idioma |
@@ -208,17 +208,19 @@ Nota: `DOCU_UPDATE` deja `DOKIL-MASTERLANG = 'X'` en la versión ES; no afecta l
 
 ## ZTRAD_DOKU_DEL: borrar la versión ES de la documentación
 
-<a id="ztrad_doku_del"></a>Revierte la ayuda F1 traducida: borra con `DOCU_DEL` la versión en idioma S de los documentos listados. No toca la versión EN ni otros idiomas.
+<a id="ztrad_doku_del"></a>Revierte la ayuda F1 traducida: borra **solo** las filas en idioma S de `DOKHL`, `DOKIL` y `DOKTL` de los documentos listados. No toca la versión EN, DE ni otros idiomas.
+
+> **Atención (v1):** la primera versión usaba `DOCU_DEL` con `LANGU = 'S'`, pero ese módulo de funciones borra el documento en **todos** los idiomas. Desde la v2 no se usa `DOCU_DEL`. Además, para cada documento se cuentan las filas de los otros idiomas antes y después del borrado: si cambian, se hace `ROLLBACK WORK` de ese documento y se informa como error.
 
 | Parámetro | Descripción |
 |---|---|
-| `P_TEST` | Modo test (por defecto marcado): solo cuenta cuántos documentos S existen, no borra nada |
+| `P_TEST` | Modo test (por defecto marcado): solo cuenta, no borra nada |
 | `P_FILE` | Archivo en la PC (modo SAP GUI) |
 | `P_SRV` | Oculto, ver arriba |
 
-**Formato:** `ID OBJECT` (TSV con fila de títulos). El resultado informa documentos leídos, borrados, sin versión ES y errores. Hace `COMMIT WORK` cada 1.000 documentos. Para verificar, volver a correrlo en modo test: todos deben quedar como "Sin version ES".
+**Formato:** `ID OBJECT` (TSV con fila de títulos). El resultado informa documentos leídos, documentos con versión ES borrada (con las filas S de cada tabla), sin versión ES y errores. Hace `COMMIT WORK` por documento. Para verificar, volver a correrlo en modo test: todos deben quedar como "Sin version ES". Conviene probar antes con un archivo de un solo documento y revisar en SE61 que la versión EN siga existiendo.
 
-Por el servicio HTTP: `/zztrad/run?prog=ZTRAD_DOKU_DEL&p_test=X&p_srv=rfcimport\lista.txt`.
+Por el servicio HTTP: `/zztrad/run?prog=ZTRAD_DOKU_DEL&p_test=X&p_srv=rfcimport\\lista.txt`.
 
 ## ZTRAD_FINDTXT: dónde está guardado un texto
 
