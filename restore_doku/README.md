@@ -77,7 +77,7 @@ Restore (pasos 4 y 5):
 
 Idioma S en BAS para esos objetos: 0.
 
-Auditoría (paso 6):
+Auditoría (paso 6). Ese día se corrió en tres scripts sueltos; a las 18:37 se volvió a correr `4_auditoria.sql` tal como está en el repo, sin errores y con los mismos resultados:
 - DOKCL: 0 filas en BAS y en el dump.
 - DOKHL y DOKIL: 0 filas distintas, 0 filas de más en BAS.
 - DOKCLU: 0 filas distintas (clave + PAGELG + largo de VARDATA), 0 filas de más en BAS.
