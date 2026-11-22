@@ -38,6 +38,7 @@ Probado en **SAP ECC 6.0 EHP6** (SAP_BASIS 731, kernel 722, Unicode) sobre **Syb
 | [`ztrad_dynp_del_final.abap`](#ztrad_dynp_del) | Report `ZTRAD_DYNP_DEL` | Borra las cargas de textos de pantalla (`DYNPTXTLD`) de un idioma |
 | [`ztrad_cua_del_final.abap`](#ztrad_cua_del) | Report `ZTRAD_CUA_DEL` | Borra las cargas de textos de GUI (menús, botones, títulos) |
 | [`zcl_ztrad_http_final.abap`](#zcl_ztrad_http) | Clase `ZCL_ZTRAD_HTTP` + nodo SICF | Servicio HTTP para correr los `ZTRAD_*` en fondo sin SAP GUI |
+| [`restore_doku/`](restore_doku/README.md) | Scripts SQL de Sybase + bat | Recuperar documentación DOKU borrada copiándola desde un dump viejo (lo que se usó tras el incidente de `ZTRAD_DOKU_DEL` v1) |
 
 ---
 
@@ -210,7 +211,7 @@ Nota: `DOCU_UPDATE` deja `DOKIL-MASTERLANG = 'X'` en la versión ES; no afecta l
 
 <a id="ztrad_doku_del"></a>Revierte la ayuda F1 traducida: borra **solo** las filas en idioma S de `DOKHL`, `DOKIL` y `DOKTL` de los documentos listados. No toca la versión EN, DE ni otros idiomas.
 
-> **Atención (v1):** la primera versión usaba `DOCU_DEL` con `LANGU = 'S'`, pero ese módulo de funciones borra el documento en **todos** los idiomas. Desde la v2 no se usa `DOCU_DEL`. Además, para cada documento se cuentan las filas de los otros idiomas antes y después del borrado: si cambian, se hace `ROLLBACK WORK` de ese documento y se informa como error.
+> **Atención (v1):** la primera versión usaba `DOCU_DEL` con `LANGU = 'S'`, pero ese módulo de funciones borra el documento en **todos** los idiomas. Desde la v2 no se usa `DOCU_DEL`. Además, para cada documento se cuentan las filas de los otros idiomas antes y después del borrado: si cambian, se hace `ROLLBACK WORK` de ese documento y se informa como error. El 22/11/2026 la v1 borró así 26.613 documentos; se recuperaron desde un dump con los scripts de [`restore_doku/`](restore_doku/README.md).
 
 | Parámetro | Descripción |
 |---|---|

@@ -1,0 +1,4 @@
+# Archivos para Windows: se guardan y se bajan con CRLF tal cual
+*.bat -text
+*.sql -text
+*.txt -text
