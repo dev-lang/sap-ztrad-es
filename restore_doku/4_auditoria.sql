@@ -6,8 +6,8 @@
    B) DOKCL, DOKCLU, DOKHL y DOKIL: conteos con y sin idioma S
    C) fila por fila: filas del dump que no están idénticas en BAS, y filas
       de BAS que no estaban en el dump (todo debería dar 0)
-   Reúne lo que se corrió como 4_auditoria, 5_auditoria_b y 6_auditoria_c,
-   con estas correcciones ya aplicadas:
+   El 22/11/2026 esto se corrió en tres scripts sueltos (no están en el
+   repo); acá van unidos y con estas correcciones ya aplicadas:
      - Sybase exige DECLARE CURSOR solo en su batch: A) usa un while
      - VARDATA (DOKCLU) es IMAGE y no se puede comparar en un WHERE: se
        compara PAGELG + datalength(VARDATA)
