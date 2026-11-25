@@ -37,7 +37,10 @@ Probado en **SAP ECC 6.0 EHP6** (SAP_BASIS 731, kernel 722, Unicode) sobre **Syb
 | [`ztrad_tabdump_final.abap`](#ztrad_tabdump) | Report `ZTRAD_TABDUMP` | Vuelca cualquier tabla a un TSV |
 | [`ztrad_dynp_del_final.abap`](#ztrad_dynp_del) | Report `ZTRAD_DYNP_DEL` | Borra las cargas de textos de pantalla (`DYNPTXTLD`) de un idioma |
 | [`ztrad_cua_del_final.abap`](#ztrad_cua_del) | Report `ZTRAD_CUA_DEL` | Borra las cargas de textos de GUI (menús, botones, títulos) |
+| [`ztrad_lang_del_final.abap`](#ztrad_lang_del) | Report `ZTRAD_LANG_DEL` | Borra el español copiado: filas S iguales a E en tablas de texto, filas S de DD04T de una lista y text pools S (paso 2 de la reversión) |
+| [`ztrad_tpool_chk_final.abap`](#ztrad_tpool_chk) | Report `ZTRAD_TPOOL_CHK` | Solo lectura: compara los text pools S contra E de una lista de programas |
 | [`zcl_ztrad_http_final.abap`](#zcl_ztrad_http) | Clase `ZCL_ZTRAD_HTTP` + nodo SICF | Servicio HTTP para correr los `ZTRAD_*` en fondo sin SAP GUI |
+| [`restore_es/`](restore_es/README.md) | Scripts SQL de Sybase, Python y bat | Reversión completa de la traducción ES (23–24/11/2026): pisar con el inglés original y borrar el español copiado |
 | [`restore_doku/`](restore_doku/README.md) | Scripts SQL de Sybase + bat | Recuperar documentación DOKU borrada copiándola desde un dump viejo (lo que se usó tras el incidente de `ZTRAD_DOKU_DEL` v1) |
 
 ---
@@ -270,6 +273,31 @@ Después de importar textos de pantalla (D021T) o labels de elementos de datos, 
 Borra con `RS_CUA_DELETE_TEXT_LOAD` las cargas de textos de status GUI de los programas de `S_PROG` en el idioma `P_LANG` (por defecto `S`). Después, en las sesiones abiertas, `/$SYNC`.
 
 > No conviene correrlo con `S_PROG = *` por el servicio: escribe una línea por programa y el spool resultante es enorme.
+
+---
+
+<a id="ztrad_lang_del"></a>
+## ZTRAD_LANG_DEL: borrar el español copiado
+
+Paso 2 de la [reversión](restore_es/README.md). Un grupo por corrida; `P_TEST = X` por defecto (solo cuenta). Informe TSV en `P_OUT` (relativo a `c_base`).
+
+| Parámetro | Descripción |
+|---|---|
+| `R_TAB` + `S_TAB` | Tablas de texto: borra las filas S **idénticas** a su fila E (todos los campos salvo el idioma). No toca S distinto de E, S sin E ni objetos con idioma original español (TADIR `MASTERLANG = 'S'`, TRDIR `RLOAD = 'S'`). Solo el mandante actual |
+| `R_DTEL` + `P_DFILE` | Borra la fila S entera de DD04T de los elementos de la lista (uno por línea) |
+| `R_TPL` + `P_PFILE` + `P_OFILE` | Text pools: borra los pools S que son copia entera del inglés y quita las entradas de `P_OFILE` (`PROG<TAB>ID<TAB>KEY`). `P_PFILE = *` toma todos los programas con pool S |
+| `P_TMODE` | `B` (defecto): en pools mixtos, con alguna entrada de SAP, solo quita las de `P_OFILE`. `A`: también las iguales a E |
+| `P_CHUNK` | Valores del primer campo clave por bloque (defecto 200, `COMMIT` por bloque) |
+| `P_SMP` | Muestras por tabla en el informe |
+
+Cuenta filas E y D antes y después de cada tabla y marca `*** ATENCION` si cambian. En tablas pool o cluster no usa `SELECT DISTINCT`. Después de una corrida real: `/$SYNC`.
+
+---
+
+<a id="ztrad_tpool_chk"></a>
+## ZTRAD_TPOOL_CHK: comparar text pools S contra E
+
+Solo lectura. Para cada programa de `P_SRV` (uno por línea) hace `READ TEXTPOOL` en S y en E y compara entrada por entrada. Escribe en `P_OUT` las diferencias (`DIF`, `S_SIN_E`) y una línea resumen por programa (`PROG`). El spool solo tiene los totales.
 
 ---
 

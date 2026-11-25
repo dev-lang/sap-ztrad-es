@@ -1,0 +1,5 @@
+set nocount on
+go
+print '=== Job CUA_DEL (ZTRAD_HTTP 21595400) ==='
+select JOBNAME, JOBCOUNT, STATUS, STRTDATE, STRTTIME, ENDDATE, ENDTIME from BAS.SAPSR3.TBTCO noholdlock where JOBNAME = 'ZTRAD_HTTP' and JOBCOUNT = '21595400'
+go

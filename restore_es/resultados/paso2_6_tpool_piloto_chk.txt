@@ -1,0 +1,151 @@
+﻿PROG	ID	KEY	ESTADO	TEXTO_S	TEXTO_E
+/1SDBF12L/RV14AK22	I	003	S_SIN_E	  Scale qty         UM   Amount           Unit   per  UM	
+/1SDBF12L/RV14AK22	I	007	S_SIN_E	All	
+/1SDBF12L/RV14AK22	I	00E	S_SIN_E	To...	
+/1SDBF12L/RV14AK22	R		S_SIN_E	Descuentos y recargos por grupo de artículos	
+/1SDBF12L/RV14AK22	S	H_1	S_SIN_E	        Grupo de precios de material	
+/1SDBF12L/RV14AK22	S	L_1	S_SIN_E	        Período de validez	
+/1SDBF12L/RV14AK22			PROG	6 	0 	0 	0 	6 
+/1SDBF12L/RV14AK23	I	003	S_SIN_E	  Scale qty         UM   Amount           Unit   per  UM	
+/1SDBF12L/RV14AK23	I	007	S_SIN_E	All	
+/1SDBF12L/RV14AK23	I	00E	S_SIN_E	To...	
+/1SDBF12L/RV14AK23	R		S_SIN_E	Descuentos y recargos por grupo de artículos	
+/1SDBF12L/RV14AK23	S	H_1	S_SIN_E	        Grupo de precios de material	
+/1SDBF12L/RV14AK23	S	L_1	S_SIN_E	        Período de validez	
+/1SDBF12L/RV14AK23			PROG	6 	0 	0 	0 	6 
+/1SDBF12L/RV14AK24	I	003	S_SIN_E	  Scale qty         UM   Amount           Unit   per  UM	
+/1SDBF12L/RV14AK24	I	007	S_SIN_E	All	
+/1SDBF12L/RV14AK24	I	00E	S_SIN_E	To...	
+/1SDBF12L/RV14AK24	R		S_SIN_E	Descuentos y recargos por grupo de artículos	
+/1SDBF12L/RV14AK24	S	H_1	S_SIN_E	        Grupo de precios de material	
+/1SDBF12L/RV14AK24	S	L_1	S_SIN_E	        Período de validez	
+/1SDBF12L/RV14AK24			PROG	6 	0 	0 	0 	6 
+/1SDBF12L/RV14AK25	I	003	S_SIN_E	  Scale qty         UM   Amount           Unit   per  UM	
+/1SDBF12L/RV14AK25	I	007	S_SIN_E	All	
+/1SDBF12L/RV14AK25	I	00E	S_SIN_E	To...	
+/1SDBF12L/RV14AK25	R		S_SIN_E	Descuentos y recargos por grupo de artículos	
+/1SDBF12L/RV14AK25	S	H_1	S_SIN_E	        Grupo de precios de material	
+/1SDBF12L/RV14AK25	S	L_1	S_SIN_E	        Período de validez	
+/1SDBF12L/RV14AK25			PROG	6 	0 	0 	0 	6 
+/1SDBF12L/RV14AK27	I	007	S_SIN_E	All	
+/1SDBF12L/RV14AK27	I	00E	S_SIN_E	To...	
+/1SDBF12L/RV14AK27			PROG	2 	0 	0 	0 	2 
+/1SDBF12L/RV14AK28	I	007	S_SIN_E	All	
+/1SDBF12L/RV14AK28	I	00E	S_SIN_E	To...	
+/1SDBF12L/RV14AK28			PROG	2 	0 	0 	0 	2 
+/1SDBF12L/RV14AK31	I	003	S_SIN_E	  Scale qty         UM   Amount           Unit   per  UM	
+/1SDBF12L/RV14AK31	I	007	S_SIN_E	All	
+/1SDBF12L/RV14AK31	I	00E	S_SIN_E	To...	
+/1SDBF12L/RV14AK31	R		S_SIN_E	Canadá/EE.UU.	
+/1SDBF12L/RV14AK31	S	L_1	S_SIN_E	        Período de validez	
+/1SDBF12L/RV14AK31	S	P_1	S_SIN_E	        País	
+/1SDBF12L/RV14AK31			PROG	6 	0 	0 	0 	6 
+ALINK_CUST_DFF	S	SO_ACTVT	S_SIN_E	D       Activity ID	
+ALINK_CUST_DFF	S	SO_APPLC	S_SIN_E	D       Application Type	
+ALINK_CUST_DFF	S	SO_ARMOD	S_SIN_E	D       Archiving Mode	
+ALINK_CUST_DFF	S	SO_EXTNR	S_SIN_E	D       External ID	
+ALINK_CUST_DFF	S	SO_OBJCT	S_SIN_E	D       Object Name	
+ALINK_CUST_DFF	S	SO_PROG	S_SIN_E	D       Program	
+ALINK_CUST_DFF	S	SO_RDATE	S_SIN_E	D       Start Date	
+ALINK_CUST_DFF	S	SO_RSTAT	S_SIN_E	D       Status	
+ALINK_CUST_DFF	S	SO_RTIME	S_SIN_E	D       Start Time	
+ALINK_CUST_DFF	S	SO_RUSER	S_SIN_E	D       User	
+ALINK_CUST_DFF	S	SO_TYPE	S_SIN_E	D       Program Type	
+ALINK_CUST_DFF			PROG	11 	0 	0 	0 	11 
+OAFR_PP_RUN_AGENTS	S	INFO	S_SIN_E	        Info	
+OAFR_PP_RUN_AGENTS			PROG	1 	0 	0 	0 	1 
+OAFR_PP_RUN_AGENTS_LOG	S	INFO	S_SIN_E	        Info	
+OAFR_PP_RUN_AGENTS_LOG			PROG	1 	0 	0 	0 	1 
+OAFR_SCHED_AGENT	S	INFO	S_SIN_E	        Info	
+OAFR_SCHED_AGENT			PROG	1 	0 	0 	0 	1 
+RFVZBAV0_CORE	I	AA2	S_SIN_E	Loans	
+RFVZBAV0_CORE			PROG	1 	0 	0 	0 	1 
+RFVZFIMA	I	AA2	S_SIN_E	Loans	
+RFVZFIMA			PROG	1 	0 	0 	0 	1 
+RKEBER01	I	002	S_SIN_E	Print	
+RKEBER01			PROG	1 	0 	0 	0 	1 
+RTCCTOOL	I	003	S_SIN_E	has errors	
+RTCCTOOL	I	004	S_SIN_E	No error determined	
+RTCCTOOL	R		DIF	Existence Text for Required TCC Tools	TCC Servicetools Update
+RTCCTOOL			PROG	3 	1 	0 	1 	2 
+SAPL0C37	I	DFH	S_SIN_E	PRTs#	
+SAPL0C37			PROG	1 	0 	0 	0 	1 
+SAPL0V5A	I	017	S_SIN_E	Master Data	
+SAPL0V5A	I	040	S_SIN_E	Y	
+SAPL0V5A	I	041	S_SIN_E	N	
+SAPL0V5A			PROG	3 	0 	0 	0 	3 
+SAPLF11Y	I	009	S_SIN_E	Exit	
+SAPLF11Y			PROG	1 	0 	0 	0 	1 
+SAPLFIEB_OFX_COLLECTION	I	005	S_SIN_E	No	
+SAPLFIEB_OFX_COLLECTION			PROG	1 	0 	0 	0 	1 
+SAPLFKCRM_GENERAL	I	013	S_SIN_E	Status	
+SAPLFKCRM_GENERAL			PROG	1 	0 	0 	0 	1 
+SAPLFLBPC_MAINTAIN	I	005	S_SIN_E	changed	
+SAPLFLBPC_MAINTAIN			PROG	1 	0 	0 	0 	1 
+SAPLORD_HYPERLINK_46C	I	009	S_SIN_E	MISSING	
+SAPLORD_HYPERLINK_46C	I	034	S_SIN_E	Activ	
+SAPLORD_HYPERLINK_46C	I	035	S_SIN_E	Inactiv	
+SAPLORD_HYPERLINK_46C			PROG	3 	0 	0 	0 	3 
+SAPLSHI18_B	I	A05	S_SIN_E	No	
+SAPLSHI18_B	I	055	S_SIN_E	Check Field	
+SAPLSHI18_B	I	054	S_SIN_E	Check Table	
+SAPLSHI18_B	I	053	S_SIN_E	Foreign Key Field	
+SAPLSHI18_B	I	052	S_SIN_E	Foreign Key Table	
+SAPLSHI18_B	I	051	S_SIN_E	Table Field	
+SAPLSHI18_B	I	039	S_SIN_E	: Selection Screen	
+SAPLSHI18_B	I	038	S_SIN_E	Data Browser for table	
+SAPLSHI18_B	I	037	S_SIN_E	Upper Limit for Line Selection	
+SAPLSHI18_B	I	036	S_SIN_E	List Length	
+SAPLSHI18_B	I	035	S_SIN_E	List Width	
+SAPLSHI18_B	I	032	S_SIN_E	Table:	
+SAPLSHI18_B	I	031	S_SIN_E	Do you want to transport the selected table entries?	
+SAPLSHI18_B	I	030	S_SIN_E	Transport Table Entries	
+SAPLSHI18_B	I	029	S_SIN_E	Delete Table Entries	
+SAPLSHI18_B	I	056	S_SIN_E	Short Text	
+SAPLSHI18_B	I	135	S_SIN_E	20 key relationships	
+SAPLSHI18_B	I	134	S_SIN_E	Data Browser: Key relationships	
+SAPLSHI18_B	I	133	S_SIN_E	No	
+SAPLSHI18_B	I	132	S_SIN_E	Yes	
+SAPLSHI18_B	I	131	S_SIN_E	Select all?	
+SAPLSHI18_B	I	130	S_SIN_E	The table has more than	
+SAPLSHI18_B	I	110	S_SIN_E	Generated report for displaying table contents	
+SAPLSHI18_B	I	103	S_SIN_E	Delete	
+SAPLSHI18_B	I	102	S_SIN_E	Insert	
+SAPLSHI18_B	I	101	S_SIN_E	Change	
+SAPLSHI18_B	I	100	S_SIN_E	Display	
+SAPLSHI18_B	I	057	S_SIN_E	Foreign key dependency is not unique	
+SAPLSHI18_B	I	028	S_SIN_E	Key with Foreign Key	
+SAPLSHI18_B	I	014	S_SIN_E	Fields:	
+SAPLSHI18_B	I	013	S_SIN_E	Fields	
+SAPLSHI18_B	I	012	S_SIN_E	of	
+SAPLSHI18_B	I	011	S_SIN_E	No. of Definitions	
+SAPLSHI18_B	I	010	S_SIN_E	Incorrect replacement texts	
+SAPLSHI18_B	I	009	S_SIN_E	Start not found	
+SAPLSHI18_B	I	008	S_SIN_E	not found	
+SAPLSHI18_B	I	007	S_SIN_E	List Width	
+SAPLSHI18_B	I	006	S_SIN_E	Exit Processing	
+SAPLSHI18_B	I	005	S_SIN_E	Entries Selected	
+SAPLSHI18_B	I	004	S_SIN_E	Field Name	
+SAPLSHI18_B	I	003	S_SIN_E	Do you want to exit editing?	
+SAPLSHI18_B	I	015	S_SIN_E	Fixed Columns:	
+SAPLSHI18_B	I	027	S_SIN_E	Foreign Keys	
+SAPLSHI18_B	I	026	S_SIN_E	Table Field	
+SAPLSHI18_B	I	025	S_SIN_E	Key Field	
+SAPLSHI18_B	I	024	S_SIN_E	Table Fields for Selection	
+SAPLSHI18_B	I	023	S_SIN_E	for the selection conditions	
+SAPLSHI18_B	I	022	S_SIN_E	Choose the table fields	
+SAPLSHI18_B	I	021	S_SIN_E	Too many table fields for selection (max. 40)	
+SAPLSHI18_B	I	020	S_SIN_E	Field Label	
+SAPLSHI18_B	I	01B	S_SIN_E	of	
+SAPLSHI18_B	I	01A	S_SIN_E	Displayed Fields:	
+SAPLSHI18_B	I	019	S_SIN_E	Do you want to delete all selected entries from the database?	
+SAPLSHI18_B	I	018	S_SIN_E	Error Cause	
+SAPLSHI18_B	I	017	S_SIN_E	No. of Usages	
+SAPLSHI18_B	I	016	S_SIN_E	Incorrect Insert Mode	
+SAPLSHI18_B			PROG	56 	0 	0 	0 	56 
+RFBILA00			PROG	0 	92 	0 	0 	0 
+SAPMF05A			PROG	0 	214 	0 	0 	0 
+RSPARAM			PROG	0 	2 	0 	0 	0 
+SAPLSETB			PROG	0 	59 	0 	0 	0 
+RFITEMAP			PROG	0 	33 	0 	0 	0 
+RSUSR002			PROG	0 	62 	0 	0 	0 

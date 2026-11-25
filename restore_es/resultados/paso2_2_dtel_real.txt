@@ -1,0 +1,485 @@
+﻿MODO REAL
+DD04T	BORRA	/SAPNEA/J_SC_CAPITAL	A	Capital Amount	Capital Amount		Capital Amount	Capital Amount
+DD04T	BORRA	/SPE/INB_TOTQTY_POS	A	Quantity to Post in BUn (Base Unit of Measure)	Ctd. a contab. UMB	QtyPostIn	Ctd.contab. UMB	Ctd. a contab. UMB
+DD04T	BORRA	ACTFLAG	A	Activation flag			Activation flag	Activation flag
+DD04T	BORRA	ADMINFIELD	A	Nesting depth for includes			Admin. field	Admin. field
+DD04T	BORRA	AD_CONTEXT	A	Semantic description of an object address		Semantics	Addr. semantics	Address semantics
+DD04T	BORRA	AD_DEF_NATION	A	Indicator: The standard version has this semantic	Standard	Standard	Vers. estándar	Standard Version
+DD04T	BORRA	AD_NAMCONV	A	Status of Field 'Full Name' NAME_TEXT		Converted	Converted	Converted
+DD04T	BORRA	AD_SORT1	A	Search Term 1	Search Term 1		Search Term 1	Search Term 1
+DD04T	BORRA	AD_SORT1UL	A	Search Term 1	Search Term 1		Search Term 1	Search Term 1
+DD04T	BORRA	AD_SORT2	A	Search Term 2	Search Term 2		Search Term 2	Search Term 2
+DD04T	BORRA	AD_SORT2UL	A	Search Term 2	Search Term 2		Search Term 2	Search Term 2
+DD04T	BORRA	AD_SORTOLD	A	(Not Supported) Search Term	Search Term 1		Search Term 1	Search Term 1
+DD04T	BORRA	AD_URI_BW	A	URI field to pass to BW				
+DD04T	BORRA	AEN01	A	Total change indicator		Change	Change	Change
+DD04T	BORRA	ALLOC	A	Pegging: flag: receipt is allocated to requirement				
+DD04T	BORRA	ALM_ME_DWNL_ORD_COMP_ADDON	A	ALM ME: Download Order Component Addon				
+DD04T	BORRA	ALM_ME_DWNL_ORD_HEADER_ADDON	A	ALM ME: Download Order Header Addon				
+DD04T	BORRA	ALM_ME_DWNL_ORD_OPR_ADDON	A	ALM ME: Download Order Operation Addon				
+DD04T	BORRA	ALM_ME_DWNL_PARTNER_ADDON	A	ALM ME: Download Partner Addon				
+DD04T	BORRA	ALM_ME_DWNL_PROFILE	A	ALM ME: Download Profile				
+DD04T	BORRA	ALM_ME_LPM_OBJECT	A	ALM ME: Local Profile Manager - LPM Object				
+DD04T	BORRA	ALM_ME_LPM_OBJECT_DESC	A	ALM ME: Local Profile Manager - LPM Object Description				
+DD04T	BORRA	ALM_ME_LPM_OBJ_TYPE	A	ALM ME: Local Profile Manager - LPM Object Type				
+DD04T	BORRA	ALM_ME_LPM_ROW1_COL1	A	ALM ME: Local Profile Manager - LPM Profile List ROW1_COL1				
+DD04T	BORRA	ALM_ME_MODUS	A	ALM ME: Modus				
+DD04T	BORRA	ALM_ME_USERF15	A	User Field 15-Digit				
+DD04T	BORRA	ALV_DUMMY	A	Dummy field (for setting up columns in hierarch. ALV list)				
+DD04T	BORRA	ANDSP	A	Expired useful life in periods during FY from SDep start dat	DLP		Exp.UL per.Sdep	Exp.UL periods SDep.
+DD04T	BORRA	AREN_DTE_CALLBACK_ACLA_WRITE	A	Name of Callback for Calling Archiving Classes	CB Function Archiving Class	CB Arch.Cl	Cl.arch.función CB	CB Function Arch.Cl.
+DD04T	BORRA	AREN_DTE_OUTPUT_OBJCATG	A	Category of Output Object	Output Obj. Cat.	OutObjCat	Cat.obj. salida	Output Object Cat.
+DD04T	BORRA	ARE_STATUS_ANALYZE	A	Package Status Analysis	Análisis stat.paq.	Status	Package Status	Análisis stat.paq.
+DD04T	BORRA	ARFA_FIELDNAME	A	Attribute	Atributo	Atributo	Atributo	Atributo
+DD04T	BORRA	AS4LOCAL	A	Activation Status of a Repository Object			Activation Status	Activation Status
+DD04T	BORRA	AS4VERS	A	Version of the entry (not used)			Version	Version
+DD04T	BORRA	ASSIGN_STD	A	Table/view uses the standard interface		Standard	Ass.to standard	Assigned to standard interface
+DD04T	BORRA	ATN	A	Attribute type				
+DD04T	BORRA	AUFASTNR	A	Order status		Status	Status	Order status
+DD04T	BORRA	AUFSD_X	A	Central order block for customer	OrBlk		Order block	Central order block
+DD04T	BORRA	AUFSTKZ	A	Identifier for statistical order		Statist.	Statistical	Statistical
+DD04T	BORRA	BAERF	A	Create purchase requisition		Pur. req.	Pur.requisition	Purchase requisition
+DD04T	BORRA	BANKVERS	A	Change Version of the Bank Tape		Version	Version	Change Version
+DD04T	BORRA	BAPIBP_TC_DTE_CATEGORY_DESCR	A	Description of Product Category	Desc. of Product Category	ProdCatDes	Desc.cat.prod.	Product Cat. Desc.
+DD04T	BORRA	BAPIBP_TC_DTE_CONTRACT_DESCR	A	Contract Purpose	Contract Purpose	Purpose	Finalidad contr	Contract Purpose
+DD04T	BORRA	BBBNR	A	International location number  (part 1)		Loc.no. 1	Location no. 1	Int. location no. 1
+DD04T	BORRA	BBSNR	A	International location number (Part 2)		Loc.no. 2	Location no. 2	Int. location no. 2
+DD04T	BORRA	BCA_PAR_WPNO_Y	A	Work Process Number	Work Process Number	Number	Nº proceso trab	Work Process Number
+DD04T	BORRA	BCSD_FILENAME	A	File Name of an Attachment	Nom. fich. de un anexo	File Name	File Name	Nom. fich. de un anexo
+DD04T	BORRA	BIC_USED	A	Existing entry for selection fields or tab titles		ExistEntry	Existing entry	Existing entry
+DD04T	BORRA	BKVZSTEU	A	Display control data				
+DD04T	BORRA	BLNKZ	A	Subsidy Indicator for Determining the Reduction Rates		Subs.ind.	Subs.ind.	Subsidy indic.
+DD04T	BORRA	BP_TC_DTE_CONTRACT_DESCR	A	Contract Purpose	Contract Purpose	Purpose	Finalidad contr	Contract Purpose
+DD04T	BORRA	BRAKZ	A	Additional industry codes available		AddIndCode	Add.ind.codes	Other industries
+DD04T	BORRA	BTCWPPID	A	Work process ID	Work process ID		Work process ID	Work process ID
+DD04T	BORRA	BUFFERED	A	Buffering flag			Buff. allowed	Buff. allowed
+DD04T	BORRA	BUVAR	A	Company Code Variant (Screen)		Screen var	Screen variant	Document entry screen variant
+DD04T	BORRA	BZQHL	A	Take regular vendor into account		Reg. vend.	Regular vendor	Regular vendor
+DD04T	BORRA	CASSD_X	A	Central sales block for customer	SleBl		Sales block	Central sales block
+DD04T	BORRA	CCOBJID	A	Object ID		Object ID	Object ID	Object ID
+DD04T	BORRA	CDV_DTE_CHANGEINDICATOR_TEXT	A	Description of Change Indicator	Change Indicator Description	ChangeInd.	Change Ind.	Descr.ind. modif.
+DD04T	BORRA	CDV_DTE_VALID_FROM_TO_TEXT	A	Business-Related Validity of Object	Validity	Validity	Validez empres.	Business Validity
+DD04T	BORRA	CHAR40	A	Character field of length 40		Char	Char	Char
+DD04T	BORRA	CHAR50	A	Comment				
+DD04T	BORRA	CHAZV	A	Indicator: batch status management active		BS mgmt	Batch stat.mgmt	Batch status mgmt
+DD04T	BORRA	CMD_MDOSKEY_REF	A	Reference to Key of the MD Object/MD Segment	Reference MD Segment	Ref.MD Seg	Segm.DM ref.	Reference MD Segment
+DD04T	BORRA	CMD_MDSKEY_REF	A	Reference to Key of Master Data Segment	Reference MD Segment	Ref.MD Seg	Segm.DM ref.	Reference MD Segment
+DD04T	BORRA	CNS_DTE_RECV_DESCR	A	Description of Recipient	Description of Recipient	Rec. Desc.	Recip. Descrip.	Descr. destinatario
+DD04T	BORRA	COL_ITEM	A	Color of Line Item in the List				
+DD04T	BORRA	CORR_NO_DOCPARTS_KK	A	Number of Document Parts	DcPt	NoDocParts	No. Doc. Parts	Número partes doc.
+DD04T	BORRA	CO_ALEMT	A	Cost center distribution method via ALE		ALE method	ALE dist.method	ALE distrib. method
+DD04T	BORRA	CO_BTRKL	A	Amount Class for Value in Controlling Area Currency		Amt Class	Amount Class	Amount Class
+DD04T	BORRA	CO_MEINH	A	Unit of Measure		U.of Meas.	Unit of Measure	Unit of Measure
+DD04T	BORRA	CO_MVFLG	A	Quantity Complete/Incomplete		Qty Com/In	Qty Compl/Incom	Qty Complete/Incomp.
+DD04T	BORRA	CO_RBEST	A	Category of Reference Purchase Order		PO Categ	PO Category	PO Category
+DD04T	BORRA	CPBET_F05A	A	Indicator: Omit amounts when Copying ?				Do not propose amounts
+DD04T	BORRA	CPPID	A	CPP/QPP indicator	CI			
+DD04T	BORRA	CPSTO_F05A	A	Indicator: Generate Reverse Posting for Reference Document ?				Generate reverse posting
+DD04T	BORRA	CTAXJ3	A	Payment cards: Overall document tax - Tax jur. code level 3				
+DD04T	BORRA	CTAXJ4	A	Payment cards: Overall document tax - Tax jur. code level 4				
+DD04T	BORRA	CXN	A	Link version				
+DD04T	BORRA	DB2CINT4	A	Field Type INT, Length 4				
+DD04T	BORRA	DB2INT4	A	Field Type INT, Length 4				
+DD04T	BORRA	DB2INT4U	A	Field Type INT, Length 4				
+DD04T	BORRA	DBGACTUAL	A	Debugger: Current line				
+DD04T	BORRA	DBMAL	A	Message control for direct procurement		MCtr:DProc	MsgCtr:DirProc.	MsgeCtr-direct proc.
+DD04T	BORRA	DBMON_CM	A	Date Monitoring		Monitoring	Monitoring	Monitoring
+DD04T	BORRA	DBPAY_CM	A	Payment Index		Pmnt index	Payment index	Payment index
+DD04T	BORRA	DDSHROLLCH	A	Data elem. of parameter indep. of field of selection method		Own DE	Mod. data elem.	Data element modif.
+DD04T	BORRA	DDSHSIMPLE	A	Flag if a search help is an elementary search help		elementary	elementary	Element. search help
+DD04T	BORRA	DDTABTYPE	A	DD: Flag if it is a table		Table	Table	Table
+DD04T	BORRA	DEL12	A	MRP element number		MRP No.	MRP element number	MRP element number
+DD04T	BORRA	DELIS	A	MPS evaluation: line number of higher level node				
+DD04T	BORRA	DELNR	A	MRP element number		MRP No.	MRP element number	MRP element number
+DD04T	BORRA	DELPS	A	MRP element item		MRP itm	MRP elemnt item	MRP element item
+DD04T	BORRA	DELTA_F02L	A	Over budget amount in credit management	Over budget		Over budget	Over budget
+DD04T	BORRA	DPL_DYNNRS	A	Display assigned maintenance screen numbers		List	List screens	List screen numbers
+DD04T	BORRA	DPL_RANGES	A	Free number ranges for maintenance screens		Ranges	Free numbers	Display free number ranges
+DD04T	BORRA	DSO1_F03L	A	DSO Code				
+DD04T	BORRA	DSO2_F03L	A	DSO Code				
+DD04T	BORRA	DSO3_F03L	A	DSO Code				
+DD04T	BORRA	DSOIN_F02L	A	DSO ratio (outstanding receivables in sales days)				
+DD04T	BORRA	DTAT17	A	Instruction Key 2		IK2	Instruct. Key 2	Instruction Key 2
+DD04T	BORRA	DTAT18	A	Instruction Key 3		IK3	Instruct. Key 3	Instruction Key 3
+DD04T	BORRA	DTAT19	A	Instruction Key 4		IK4	Instruct. Key 4	Instruction Key 4
+DD04T	BORRA	DTAUSBH7	A	Company Entry Description				
+DD04T	BORRA	DUPRE	A	Counter anti duplicate record				
+DD04T	BORRA	DXFILEMASK	A	Mask for file name		File mask	Mask for file name	Mask for file name
+DD04T	BORRA	DXREPORT	A	Data transfer report		Report	Report	Data transfer report
+DD04T	BORRA	DYNP1_DEL	A	Delete overview screen		Overview	Overview screen	Delete overview
+DD04T	BORRA	DYNP2_DEL	A	Delete single screen		Single sc.	Delete single scrn	Delete single screen
+DD04T	BORRA	DZIBAN	A	IBAN of the Payee	IBAN of the Payee		IBAN of the Payee	IBAN of the Payee
+DD04T	BORRA	EBUKR_001	A	Original Key of the Company Code			Original key	Original key
+DD04T	BORRA	ECH_DTE_DURATION_UNIT	A	Unit for Time Interval	Unit for Interval	Unit	Ud. p/interv.	Unit for Interval
+DD04T	BORRA	ECH_DTE_OBJTYPE	A	Object Type	Tipo obj.	Obj. Type	Object Type	Object Type
+DD04T	BORRA	EFG_DTE_APPL_COMP_ID	A	Application Component ID	Application Component	Component	Appl. Component	Comp. aplicación
+DD04T	BORRA	EFG_DTE_CNT_BOOKINGS	A	Number of Bookings	N.º de reservas	No.Bkngs	No. of Bookings	Number of Bookings
+DD04T	BORRA	EMINOBBP	A	Indicator: Do Not Create Budget Billing Plan				
+DD04T	BORRA	EMP_TAX	A	Employee and/or employer taxes				
+DD04T	BORRA	ENTRY_VIMF	A	Control information for missing interface		Ctrl.info	Control info	Control information
+DD04T	BORRA	ERRLIST	A	AS400-DDIC: Input list of self-recovering errors				
+DD04T	BORRA	ERROR_TEXT	A	PP Planning calendar: notes	Notes	Note		
+DD04T	BORRA	ERTXZ_F02E	A	Financial statement text target language				
+DD04T	BORRA	ETBAL_IGNORE	A	List of Message Types to Be Ignored in BAL (*= All)	Types to Ignore in BAL	Ignore BAL	Ignore Type BAL	Tipos a ignorar BAL
+DD04T	BORRA	ETOQ_LOG_DETAIL	A	eCATT OQ Depth / Level of detail of Logging	LOG Detail	LOG Detail	Nivel det.LOG	LOG Level of Detail
+DD04T	BORRA	ETPERF_RS_SYST	A	System Selection for RESCON in PERF/ENDPERF	Systems	Systems	Selec. sistema	System Selection
+DD04T	BORRA	ET_WS_IMP_PAR	A	Transfer Fixed Values to Default Values of Parameters	Transferir val. fijos a valores std. de parámetros	Fxd.Dflt.P	Fixed to Default Par	Transfer Fxd Vals to Param. Default Vals
+DD04T	BORRA	EVTYP	A	Evaluation usage	Usg	Usage		
+DD04T	BORRA	EXTRK	A	Execution with transaction		Transact.	Transaction	Transaction
+DD04T	BORRA	FABKL	A	Factory calendar key		Calendar	Factory calend.	Factory calendar
+DD04T	BORRA	FAGL_RLDNR	A	Ledger in General Ledger Accounting	Ld			
+DD04T	BORRA	FAGL_R_XDOC_REORG	A	Doc. Contains Open Item that Was Transferred During Reorg.			Reorganized	Open Itm Reorganized
+DD04T	BORRA	FAKSD_X	A	Central billing block for customer	BlBlk		Billing block	Central billing block
+DD04T	BORRA	FCL_DTE_AAMTLIM_CD_LOW	A	Lower Limit for Amount for Condition Determination	Límite inferior imp.p. determinac. condición	LowAmtLim	Lower Amt Limit	Lower Limit For Amnt
+DD04T	BORRA	FCL_DTE_AAMTLIM_LOW	A	Lower Limit for Amount	Lower Limit for Amount for Calculations	AmtLowLim	AmtLowerLimit	Límite inf. importe
+DD04T	BORRA	FCL_DTE_CAMT_POST	A	Payment Currency	Moneda pago	Payt Crcy	Moneda pago	Payment Currency
+DD04T	BORRA	FCL_DTE_FKEYD_BUS	A	Key Date = Working Day	K=W	Key=Work	KeyDate=WorkDay	Fe.clave = día lab.
+DD04T	BORRA	FCL_DTE_IFORMULA	A	Formula Reference	Ref.fórmula	Formula	Formula	Formula Reference
+DD04T	BORRA	FCL_DTE_NSECONDS	A	Number of Seconds (With +/- Sign)	Seconds	Seconds	Número segundos	Number of Seconds
+DD04T	BORRA	FCL_DTE_NTOLDAYMAX	A	Tolerance Days Val.Dte.Max.	Tolerance Days Val.Dte.Max.	Tol.Dy.Max	Tol.Dy.Val.Max.	Días tol.fecha valor máx.
+DD04T	BORRA	FCL_DTE_NTOLDAYMIN	A	Tolerance Days Val.Dte.Min.	Tolerance Days Val.Dte.Min.	Tol.Dy.Min	Tol.Dy.Val.Min	Días tol.fecha valor mín.
+DD04T	BORRA	FCL_DTE_OBALANCEBASE	A	Basis of Balances	BB	Bal. Basis	Base de saldos	Basis of Balances
+DD04T	BORRA	FCL_DTE_OCALCCATG	A	Calculation Category	CC	Calc. Cat.	Cat. cálculo	Calculation Category
+DD04T	BORRA	FCL_DTE_ORHYTHMCATG	A	Frequency Category	FreqCt	Freq. Cat.	Categoría frec.	Frequency Category
+DD04T	BORRA	FCL_DTE_OTIMELIM	A	Reason for Assignment of Condition	AssignReas	AssignReas	Motivo asignac.	Assignment Reason
+DD04T	BORRA	FCL_DTE_RPERCENTAGE	A	Percentage Rate	Porcentaje	Percentage	Percentage Rate	Percentage Rate
+DD04T	BORRA	FCL_DTE_RPERCENT_ORG	A	Percentage - Original Value for Margin	Porcentaje - valor original p.margen	Percentage	Percent. Margin	Percentage Margin
+DD04T	BORRA	FCTYP	A	Type of function code				
+DD04T	BORRA	FDINT	A	PP Planning calendar: calculation rule for workday interval		Workdays		Workdays
+DD04T	BORRA	FDLST	A	Indicator: previous working day				Previous working day
+DD04T	BORRA	FDNXT	A	Indicator: following working day				Following working day
+DD04T	BORRA	FE_IND	A	Regulatory indicator		Reg. ind.	Reg. indicator	Regulatory indicator
+DD04T	BORRA	FFUNC_REG	A	Update control function module		Ctrl. FM	Ctrl. funct.module	Update control function module
+DD04T	BORRA	FICM_DTE_ACBAL_PER	A	Number of Periods	Número períodos	Nr Periods	Número períodos	Number of Periods
+DD04T	BORRA	FICM_IDAY_ICALID	A	Interest Calendar ID	ID	Int.Cal.ID	ID calend.int.	Interest Calendar ID
+DD04T	BORRA	FICM_ODIFF_MODE	A	Mode for Differentiation Category	Modo p/categoría diferenciación	Mode	Mode	Modo p/categoría diferenciación
+DD04T	BORRA	FICO_FINCLEXCL	A	Transfer Inclusive Indicator From Condition	Inclusive Condition	Incl. Kond	Condición incl.	Inclusive Ind. Conditions
+DD04T	BORRA	FICO_FMAINTSR	A	Set of Rules Empty	RS Empty	RS Empty	Set reglas vac.	Set of Rules Empty
+DD04T	BORRA	FICO_FNO_INHERITANCE	A	Condition is not Passed On	Validity Period is not Passed On	No Pass On	No transferible	Cannot be Passed On
+DD04T	BORRA	FICO_METHOD_TYPE	A	Method Category	Categ.método	Method Cat	Method Category	Method Category
+DD04T	BORRA	FICO_OREFUND	A	Category for Interest Reimbursement	Cat. p/reembolso intereses	Reimb. Cat	Int.ReimbursmtCat.	Cat. p/reembolso intereses
+DD04T	BORRA	FICO_ORELTYPE	A	Relationship Category	RelCat	RelCat	RelationshipCat	Categoría relación
+DD04T	BORRA	FIELD_NORM	A	Field attribute normal	Normal field		Normal field	Normal field
+DD04T	BORRA	FKDAY	A	Factory calendar day				
+DD04T	BORRA	FLD15	A	General counter field (P/L15)				
+DD04T	BORRA	FL_ARRV	A	Destination		Destinat.	Destination	Destination
+DD04T	BORRA	FL_DEPA	A	Departure Location		Depart	Departure	Departure
+DD04T	BORRA	FMFG_ALC	A	Agency Location Code	Agency Location Code		Agency Loc Cd	Agency Location Code
+DD04T	BORRA	FM_UMART	A	Type of Payment Transfer	Transfer type		Transfer type	Transfer type
+DD04T	BORRA	FSBP_PACKAGE_SIZE	A	Package Size	Tam.paquet	Pack. Size	Package Size	Package Size
+DD04T	BORRA	FSPP_OBJ_PER_COMMIT	A	Number of Objects for each Commit Work	Number of Objects	No.Objects	Número objetos	Number of Objects
+DD04T	BORRA	FSPP_PAR_FIELD	A	PP Services: Field Name in Parameter Substructure	Parameter Field Name	Field Name	Nom. cpo.parámetro	Field Name in Param. Structure
+DD04T	BORRA	FTEXT_F02H	A	Field name				
+DD04T	BORRA	FUNCT_DEL	A	Delete maintenance modules		Del.mod.	Maintenance mod	Delete maint. modules
+DD04T	BORRA	FUNCT_DPL	A	Display maintenance module selected		Disp.mod.	Display module	Display maintenance module
+DD04T	BORRA	FUNCT_MNT	A	Display maintenance module		Disp.mod.	Display module	Display maintenance module
+DD04T	BORRA	FUNKT_DLK	A	Function of cost center		Function	Function	Function
+DD04T	BORRA	FWEEK	A	Work field for week		Week	Week	Week
+DD04T	BORRA	GGRUP_MODG	A	Group in Field Selection Definition		Group	Group	Group
+DD04T	BORRA	GITTGR	A	Summariz. of trans. types for asset history sheet		Sheet grp	Hist sheet grp	Asst hist sheet grp
+DD04T	BORRA	GLE_DTE_MCA_XMCA	A	Document Originates from Multi Currency Accounting	Document Originates from Multi Currency Accounting		Doc. from MCA	Document from Multi Curr. Accounting
+DD04T	BORRA	GN	A	Associated group number				
+DD04T	BORRA	GNO	A	Group number				
+DD04T	BORRA	GRID	A	Grid size				
+DD04T	BORRA	GRMG_STRING	A	String in GRMG Package				
+DD04T	BORRA	HDS_DTE_SOURCE_STRUC	A	Source Structure Name	Source Structure	SourceStr.	Estr. fuente	Source Structure
+DD04T	BORRA	HDS_DTE_SOURCE_STRUCTURE	A	Source Structure	Estr. fuente	SrcStrct	Estr. fuente	Estr. fuente
+DD04T	BORRA	HDS_DTE_TARGET_STRUCTURE	A	Target Structure	Target Structure	Targ.Struc	Estr. dest.	Target Structure
+DD04T	BORRA	HDS_DTE_TEST_CLIMATE	A	Climate	Clima	Climate	Climate	Climate
+DD04T	BORRA	HDS_DTE_UI_SOURCE_FIELDDESCR	A	Source Field Description	Description	Descriptn	Description	Descr. cpo. fuente
+DD04T	BORRA	HR_ALEOX_CREATE_SUS	A	Indicator: Also Append User to Position				
+DD04T	BORRA	ICLE_ACCFORM	A	Accident Event			Accident Event	
+DD04T	BORRA	ICL_DEDUCT_OV	A	Deductible Applied		Deductible	Deductible	
+DD04T	BORRA	ICL_EMP_COI	A	Cause of Injury			Cause of Injury	Cause of Injury
+DD04T	BORRA	ICL_PAYEDSC_P	A	Proposed Payee			Proposed Payee	
+DD04T	BORRA	ICL_XBULKPAYMENT	A	Flag for Bulk Payment				Bulk payment
+DD04T	BORRA	ICO_AUGP	A	Cleared/Open Items Symbol	Cleared/open items symbol		Symbol	Cleared/open items symbol
+DD04T	BORRA	INDEXID	A	Unique Index ID in a Table		Index Name	Index ID	Index ID
+DD04T	BORRA	INSEL	A	Indicator: Partial Selection of Postings				Indicator: Item in Partial Selection
+DD04T	BORRA	INTAD	A	Internet address of partner company clerk	Clerk's internet address		Clrk's internet	Clrk's internet add.
+DD04T	BORRA	IST_ADD_NUMBER	A	Internal number for additional data object				
+DD04T	BORRA	JV_ACTIVE	A	Indicator: JVA Active		JVA Active	JVA Active	JV Accounting Active
+DD04T	BORRA	JV_JIBSA	A	JIB/JIBE Subclass A		Subclass A	JIB/JIBE SbClsA	JIB/JIBE Subclass A
+DD04T	BORRA	JV_NAME	A	Joint Venture		Venture	Joint Venture	Joint Venture
+DD04T	BORRA	J_1ADOCCL_	A	Document Class		Doc. Class	Document Class	Document Class
+DD04T	BORRA	J_1ADTYP_D	A	Distribution Type for Employment Tax		Distribut.	Distr. Type	Distribution Type
+DD04T	BORRA	J_1BINDUS1	A	Customer's CFOP category		CFOP cat.	CFOP Category	Cust. CFOP category
+DD04T	BORRA	J_1BTAXLW1	A	Tax law: ICMS		ICMS text	ICMS law	ICMS law
+DD04T	BORRA	J_1BTAXLW2	A	Tax law: IPI		IPI text	IPI law	IPI law
+DD04T	BORRA	J_1IAEDRAT	A	Additional Excise Duty %				
+DD04T	BORRA	J_1IBEDRAT	A	BED percentage				
+DD04T	BORRA	J_1IRATE	A	BED percentage				
+DD04T	BORRA	J_1ISEDRAT	A	Special Excise Duty %				
+DD04T	BORRA	KALSM_D	A	Procedure (Pricing, Output Control, Acct. Det., Costing,...)		Procedure	Procedure	Procedure
+DD04T	BORRA	KATR1	A	Attribute 1		Attribute	Attribute 1	Attribute 1
+DD04T	BORRA	KATR10	A	Attribute 10		Attrib.10	Attribute 10	Attribute 10
+DD04T	BORRA	KATR2	A	Attribute 2		Attrib. 2	Attribute 2	Attribute 2
+DD04T	BORRA	KATR3	A	Attribute 3		Attrib. 3	Attribute 3	Attribute 3
+DD04T	BORRA	KATR4	A	Attribute 4		Attrib. 4	Attribute 4	Attribute 4
+DD04T	BORRA	KATR5	A	Attribute 5		Attrib. 5	Attribute 5	Attribute 5
+DD04T	BORRA	KATR6	A	Attribute 6		Attrib. 6	Attribute 6	Attribute 6
+DD04T	BORRA	KATR7	A	Attribute 7		Attrib. 7	Attribute 7	Attribute 7
+DD04T	BORRA	KATR8	A	Attribute 8		Attrib. 8	Attribute 8	Attribute 8
+DD04T	BORRA	KATR9	A	Attribute 9		Attrib. 9	Attribute 9	Attribute 9
+DD04T	BORRA	KDNAM	A	Printer destination for CCtr report		Printer	Printer name	Printer destination
+DD04T	BORRA	KNTBU	A	Account assignment category: unknown account assignment		AAsgnUknwn	Accnt asgnmt unknown	Account assignment unknown
+DD04T	BORRA	KOART_AV	A	Payment Advice Account Type		Acct type	Account type	Account type
+DD04T	BORRA	KOSAR	A	Cost Center Category		CostCtrCat	CCtr Category	Cost Center Category
+DD04T	BORRA	KOTEL	A	Correspondence telephone number	Telephone number	Tel.no.	Telephone no.	
+DD04T	BORRA	KPP_LINE	A	Line in generated coding -> see long text				
+DD04T	BORRA	KRAUS_CM	A	Credit information number	Credit information number		Cred.info no.	Cred.info number
+DD04T	BORRA	KUKLA	A	Customer classification		Classific.	Customer class.	Customer classific.
+DD04T	BORRA	KVOBJID	A	Object Assigned to Product Cost Collector	Assigned object		Assigned object	Assigned object
+DD04T	BORRA	KVSTEPT	A	Processing Step	Processing step		Processing step	Processing step
+DD04T	BORRA	LCURR	A	Currency key of the local currency		LC	Local crcy	Local currency
+DD04T	BORRA	LEDNR	A	Ledger for Controlling objects				
+DD04T	BORRA	LEPER	A	Length of lease in periods	Per		Periods	Lease in periods
+DD04T	BORRA	LFZSO	A	Regla especial para continuación pago salario	RE	SpecRule	Special Rule	Regla especial
+DD04T	BORRA	LIFSD_X	A	Central delivery block for the customer	DlvBl		Delivery block	Central delivery block
+DD04T	BORRA	LOCKB	A	Key of the Lockbox to Which the Customer Is To Pay				
+DD04T	BORRA	LPERF	A	Create delivery schedule		Del.sched.	Del. schedule	Delivery schedule
+DD04T	BORRA	MACKZ	A	Matchcode indicator			Matchcode ind.	Matchcode ind.
+DD04T	BORRA	MAINTFLAG	A	Flag if Maintenance with Standard Tools is allowed		Tab. Maint	Table Maintenance	Table Maintenance
+DD04T	BORRA	MATNR	A	Material Number				
+DD04T	BORRA	MAXDP	A	Maximum useful life in periods	Lif		Max.life period	Max.life in periods
+DD04T	BORRA	MCID	A	Matchcode ID		MC ID	MC ID	Matchcode ID
+DD04T	BORRA	MCONAME4	A	Name of a matchcode object (4-digit)		MCObject	MC object	Matchcode object
+DD04T	BORRA	MCXXLDAT	A	Name of XXL file		File	File name	File name
+DD04T	BORRA	MCZ_LENGTH	A	Length of field in the data record in BAPI export				
+DD04T	BORRA	MCZ_OFFSET	A	Offset of field in the data record in BAPI export				
+DD04T	BORRA	MDKAE	A	Changes allowed		Change	Changes allowed	Changes allowed
+DD04T	BORRA	MDKZU	A	Automatic source determination		SrceDeter.	Source determ.	Source determination
+DD04T	BORRA	MDLVL	A	MPS evaluation: hierarchy level	Level			
+DD04T	BORRA	MDNO	A	Model type				
+DD04T	BORRA	MESSID_D	A	AS400-DDIC: Output message ID in T100				
+DD04T	BORRA	MINDP	A	Minimum useful life in periods	Lif		Min.life period	Min.life in periods
+DD04T	BORRA	MMPUR_SOURCING	A	Invoke Added-Function Source Determination via ATP		AFSD	AFSD via ATP	AF srce det. via ATP
+DD04T	BORRA	MNO	A	Model ID				
+DD04T	BORRA	MREGL	A	Rules for Copying from the Sample Account for G/L Accounts		Rules var.	Sample acct rules	Sample acct rules var.
+DD04T	BORRA	MULTIPLEX	A	Indicator whether multiplexing is possible for a table			Multiplex flag	Multiplex flag
+DD04T	BORRA	NAFKZ	A	Indicator: follow-up material active/not active				
+DD04T	BORRA	NDABP	A	Expired useful life in periods at start of fiscal year	ELP		Expired UL per.	Expired UL periods
+DD04T	BORRA	NDPER	A	Planned useful life in periods	Per		Periods	Usef.life in periods
+DD04T	BORRA	NDURP	A	Original useful life in periods	Per		Periods	Orig.life in periods
+DD04T	BORRA	NOMAT	A	Follow-up/original material				
+DD04T	BORRA	NOTFX	A	Selection of planned orders which are not firmed		Not firmed	Not firmed POrd	Planned orders not firmed
+DD04T	BORRA	NOTNULL	A	Indicator that NOT NULL is forced for this field			NOT NULL forced	NOT NULL forced
+DD04T	BORRA	NUMVR	A	Version number		Version	Version number	Version number
+DD04T	BORRA	ODN	A	Object definition no.				
+DD04T	BORRA	OIH_J1B_TXCREDIP	A	IPI credit allowed		Cred IPI?	Cred IPI?	Cred IPI?
+DD04T	BORRA	OMIMA	A	Radio button: product group members - materials		Materials	Materials	Materials
+DD04T	BORRA	OMIPG	A	Radio button: product group members - product groups		Prd.groups	Product groups	Product groups
+DD04T	BORRA	ONO	A	Object version				
+DD04T	BORRA	OPUFF	A	SAPLDISP: work without float		F	F	F
+DD04T	BORRA	OPVAR	A	Posting Period Variant		Variant	Pstg per.var.	Pstng period variant
+DD04T	BORRA	ORD41	A	Evaluation group 1		Ev.group 1	Eval.group 1	Evaluation group 1
+DD04T	BORRA	ORD42	A	Evaluation group 2		EvGroup 2	Evaluat.group 2	Evaluation group 2
+DD04T	BORRA	ORD43	A	Evaluation group 3		Eval.grp 3	Evaluat.group 3	Evaluation group 3
+DD04T	BORRA	ORD44	A	Evaluation group 4		Eval.gr.4	Eval.group  4	Evaluation group 4
+DD04T	BORRA	P03_ANGAB	A	Months of legal severance pay for garnishment	Mes. ind.leg.p.emb.	Months	Meses indem.leg	Meses ind.leg.p.emb.
+DD04T	BORRA	P09_UPD200	A	Create batch input data for updating infotype 200		UpdteIT200	Update IT 200	Update infotype 200
+DD04T	BORRA	P10_FILDA	A	Filing date				
+DD04T	BORRA	P13Q_GSIGN	A	Authorised Signatory for Payment summary/Group Certificate				
+DD04T	BORRA	P13Q_PPPRT	A	Print Payment Summary on Plain Paper				
+DD04T	BORRA	P15_MATRL	A	INAIL registration number				
+DD04T	BORRA	P15_RDPCT	A	INAIL contribution reduction percentage				
+DD04T	BORRA	P25C_SORT	A	Sort sequence				
+DD04T	BORRA	P25M_CHLNB	A	Number of children - important for tax				
+DD04T	BORRA	PAERF	A	Create planned order		Plnd order	Planned order	Planned order
+DD04T	BORRA	PARAM_PA	A	Identifying Feature of a Payment Run	ID		Identification	Identification
+DD04T	BORRA	PARZA	A	Partner counter		PartCount.	Partner counter	Partner counter
+DD04T	BORRA	PB03_WOTA6	A	Workdays	Sábado	Saturday	Saturday	Saturday
+DD04T	BORRA	PBR_ICTYP	A	Type of ID document				
+DD04T	BORRA	PBR_ISFIL	A	FCSWI: philanthropy exemption percentage		Phil.exemp	Phil.exemption%	Philantropy exempt.%
+DD04T	BORRA	PC03_DZBIS	A	Employment period in years up to the reserve key date		EmPr to KD	EmPr to KD	EmpPer to key date
+DD04T	BORRA	PC03_DZPENS	A	Employment period in years up to pension		EmPr to pn	EmpPer to pensn	EmpPer to pension
+DD04T	BORRA	PC03_ENAME	A	ELDA: field name	Name	Field name	Field name	Nom. cpo. de DDS
+DD04T	BORRA	PC03_HIREDAT	A	last entry date				
+DD04T	BORRA	PC03_VGHDU	A	Previous average amounts		PrAvAm	PrAvAm	PrAvAm
+DD04T	BORRA	PEINH	A	Price Unit	per		Price Unit	Price Unit
+DD04T	BORRA	PFUNC_REG	A	Update data processing function module		Data FM	Data proc. FM	Update data processing function module
+DD04T	BORRA	PL8	A	Numerically packed, 8 bytes with +/- sign				
+DD04T	BORRA	POKEN	A	Item Indicator		Item indic	Item indicator	Item indicator
+DD04T	BORRA	POSZS	A	Item details		ItmDetails	Item details	Item details
+DD04T	BORRA	PPDAT	A	PP Planning calendar: start date for period calculation		Start date	Start date	Calculation start date
+DD04T	BORRA	PPERI	A	PP Planning calendar: period number	Period	Period		
+DD04T	BORRA	PPVON	A	PP Planning calendar: first day of a period	From date	From date		
+DD04T	BORRA	PRKOFF	A	Correction factor: aggregation		Factor	Factor	Correction factor
+DD04T	BORRA	PROG_REG	A	Update function group main program		Upd.progr.	Main program	Update function group main program
+DD04T	BORRA	PSCOM	A	Command for Editing a Line Item				
+DD04T	BORRA	PSOO1	A	Description	Description		Description	Description
+DD04T	BORRA	PSOXG	A	Indicator: Save completed requests as approved		App. req.	Approved req.	Save completed reqs as approved
+DD04T	BORRA	PTRV_TRVCT_ABZUE	A	Per diem valuation of the recorded overnight stays				
+DD04T	BORRA	PTRV_TRVCT_R_09	A	Sign of cash advance for storage in ROT				
+DD04T	BORRA	PUSH_DELE	A	Delete generation elements		Delete	Delete	Delete
+DD04T	BORRA	PUSH_TEST	A	Test pushbutton		Test	Test	Test
+DD04T	BORRA	PWD_HASH_STRING	A	Password Hash Value (Various Algorithms and Codings)	Password Hash Val		Hash Value	Password Hash Value
+DD04T	BORRA	P_TRVCT_VORS	A	Posting and payment of advances				
+DD04T	BORRA	RALDB_INFO	A	Variant information	Variant information		Variant info	Variant info
+DD04T	BORRA	RALDB_SINV	A	Checkbox: Selection criterion / parameter invisible				
+DD04T	BORRA	RALDB_SVAR	A	Checkbox: Variable for selection criterion / parameter				
+DD04T	BORRA	RALDB_VNAM	A	Variable Name for Variant Maintenance	Variable Name for Variant Maintenance		Variable Name	Variable Name
+DD04T	BORRA	RASID	A	Interval Identification (Days in Arrears)		Interval	Interval	Interval
+DD04T	BORRA	RBUTT	A	Radio button	R	RadiButton		
+DD04T	BORRA	RB_AAUART	A	Alternative sales document type		AltOrderTy	Alt. order type	Alt. sales doc. type
+DD04T	BORRA	RB_BANFN	A	Radio button for selecting purchase requisition		Purch.req.	Purchase req.	Purchase requisition
+DD04T	BORRA	RCV_DTE_DYN_REC_DET_FILTER_ID	A	BAdI Filter Value for Dynamic Recipient Determination	BAdI Filter Value	Filter Val	Val.filtro BAdI	BAdI Filter Value
+DD04T	BORRA	REFBZ_FI	A	Posting Item of FI Reference Document		FI PstItem	FI Posting Item	FI Posting Item
+DD04T	BORRA	REFSETERLK	A	Used earmarked funds set to "Complete"		Completed	Set to 'Done'	Set to 'Done'
+DD04T	BORRA	REGIO	A	Region (State, Province, County)		Region	Region	Region
+DD04T	BORRA	RESERVE	A	Actual period		Actual per	Actual period	Actual period
+DD04T	BORRA	RESERVETAB	A	SDIC: Reserve for tables				
+DD04T	BORRA	RKESUBNR	A	Profitability Segment Changes (CO-PA)		Subnumber	Subnumber	Subnumber
+DD04T	BORRA	RPMAX	A	Period		Period	Period	Period
+DD04T	BORRA	RRCTY	A	Record Type		RecordType	Record Type	Record Type
+DD04T	BORRA	RSABCSET	A	ABC Analysis	Anál.ABC	ABC Analy.	ABC Analysis	ABC Analysis
+DD04T	BORRA	RSCS_PLUS	A	Line linking character on further selections screen				
+DD04T	BORRA	RSEUROFLAG	A	Flag Status Euro Conversion				
+DD04T	BORRA	RSPOR_KM_RM_PREFIX	A	Prefix for BW Metadata Repository Manager	KM Metadata Repository Manager Prefix			KM Metadata Repository Manager Prefix
+DD04T	BORRA	RVERS	A	Version		Version	Version	Version
+DD04T	BORRA	SATYR	A	Category (Record type customer order value)	Category	Category	Category	
+DD04T	BORRA	SC	A	Scaling factor				
+DD04T	BORRA	SCACD	A	Standard carrier access code				
+DD04T	BORRA	SCAL_D	A	Enlargement factor				
+DD04T	BORRA	SCRAFNHD	A	Radio button for screen attributes		Scrn attrs	Screen attributes	Screen attributes
+DD04T	BORRA	SCRFGRP1	A	Modification group 1			Group 1	Modif group 1
+DD04T	BORRA	SCUEB	A	Overview screen		Overv.Scrn	Overview screen	Overview screen
+DD04T	BORRA	SCVER	A	Processing screen		ProcScreen	Process. screen	Processing screen
+DD04T	BORRA	SC_APPTTGP	A	Technical Name of Appointment Type Group	Appt. Type Group		Appt. Type Group	Appt. Type Group
+DD04T	BORRA	SELKZ	A	Selection flag		Selection	Selection	Selection flag
+DD04T	BORRA	SELNV	A	Selection criteria not defined in program				Nonexistent
+DD04T	BORRA	SLATP	A	MPS evaluation: display ATP quantity		ATP qty	ATP quantity	ATP quantity
+DD04T	BORRA	SLAVL	A	MPS evaluation: display available quantity		Avail.qty	Available qty	Available quantity
+DD04T	BORRA	SLIOF	A	MPS evaluation: receipt/issue radio button				
+DD04T	BORRA	SLSOB	A	MPS evaluation: check box for procurement type				
+DD04T	BORRA	SN	A	Symbol number				
+DD04T	BORRA	SOBSS	A	MPS evaluation: accepted SOBES				
+DD04T	BORRA	SPERB_B	A	Posting block for company code		Pstg block	Co.code post.block	Posting block for company code
+DD04T	BORRA	SPERB_X	A	Central posting block		PstBlock	Posting Block	Central posting block
+DD04T	BORRA	SPERM_X	A	Centrally imposed purchasing block		Pur. block	Purch. block	Central purchasing block
+DD04T	BORRA	SPGRP	A	Blocking Reason: Price		BlockR Pr.	Block.Reas.:Prc	Blocking Reas. Price
+DD04T	BORRA	SPGRQ	A	Manual Blocking Reason		Man.Block.	Man.Block.Reasn	Manual Block. Reason
+DD04T	BORRA	SQLAPPDTAB	A	Name of an SQL table or an appended table	Table pool/cluster	P/C		Pool/cluster name
+DD04T	BORRA	SQLTAB	A	SQL table name				Pool/cluster name
+DD04T	BORRA	STCEGC_CC	A	Payment cards: VAT registration number - Customer				
+DD04T	BORRA	STCEGM_CC	A	Payment cards: VAT registration number - Merchant				
+DD04T	BORRA	STRKZ_TXT_KK	A	Free Tax Code (Text)	Name		Name	Name
+DD04T	BORRA	STRUCT_DPL	A	Structure display selected		Structure	Disp. structure	Display structure
+DD04T	BORRA	SUFIX	A	Suffix for ordinal numbers				
+DD04T	BORRA	SUID_CHANGE_MODE	A	Change Mode for a Table Entry				
+DD04T	BORRA	SWE_ENABLE	A	Indicator stating whether event queue admin. is enabled				Enable event queue
+DD04T	BORRA	SWFDBOOL	A	Boolean Value (Truth Value) with Ternary Logic				
+DD04T	BORRA	SWFGPDUETYPE	A	Guided Procedures: Deadline Type				
+DD04T	BORRA	SWFSPONAME	A	Name for the Triple: Service Port Type Operation	Name		Name	Name
+DD04T	BORRA	SWLMEMALLO	A	SAP Workload: Locally Allocated Memory	Locally Allocated Memory		Locally Alloc. Mem.	Locally Allocated Memory
+DD04T	BORRA	SWR_LED_F	A	Latest end date of a work item (formatted)	Latest end date		Latest end date	Latest end date
+DD04T	BORRA	SXMSTIMEUNIT	A	Units for Message Retention Period				
+DD04T	BORRA	SYMX	A	X coordinate of the upper left-hand corner of a symbol				
+DD04T	BORRA	SYMY	A	Y coordinate of the upper left-hand corner of the symbol				
+DD04T	BORRA	SYM_AUGP	A	Item Status Symbol	Cleared/open items symbol		Status	Cleared/open items symbol
+DD04T	BORRA	TB_BAD_ADDRESS_FLAG	A	System Response When Correspondence Cannot Be Delivered				If Cannot be Delivered
+DD04T	BORRA	TDN	A	Text definition number				
+DD04T	BORRA	TDTRANSTAT	A	Translation status		Transl.	Translation	Translation status
+DD04T	BORRA	TELTX	A	Teletex number	Teletex number			Teletex number
+DD04T	BORRA	TIJHR	A	Repayment year	Year			
+DD04T	BORRA	TKD_SIMG	A	Doc. class SIMG				
+DD04T	BORRA	TKI_RELN	A	Link to Release Note				
+DD04T	BORRA	TLANZ	A	Number of partial lots		Number	No.partial lots	No.partial lots
+DD04T	BORRA	TLINDEX	A	Info. Type Record No. with Same Key		Record no.	IT record no.	Infotype record no.
+DD04T	BORRA	TON	A	Successor object				
+DD04T	BORRA	TREXD_FIELD_NAME	A	Name of Assigned Field in Internal Table	Name of Reference Field	Field Name	Field Name	Nom. de cpo. ref.
+DD04T	BORRA	TTECH	A	Min. retention period of assets and asset values		Ret.per.	Retent.per.	Ret.per. (technical)
+DD04T	BORRA	TVDIR_DEL	A	Delete directory entry		TVDIR entr	TVDIR entry	Entry in table/view directory
+DD04T	BORRA	TVIMF_DEL	A	Delete event time catalog entries		Event time	Event time cat.	Event time catalog entries
+DD04T	BORRA	TVIMV_DEL	A	Variants		Variants	Variants	Variants
+DD04T	BORRA	TWB_TOOLNAME	A	Tool Name				
+DD04T	BORRA	TXT_AAUART	A	Alternative sales document type		AltOrderTy	Alt. order type	Alt. sales doc. type
+DD04T	BORRA	TYP_ACTIVE_GARCOLL	A	Garbage Collector Active	Garbage collect.activo	GC Act.	GarbageColl Act.	Garbage collect.activo
+DD04T	BORRA	TYP_ANALYZEMODE	A	Analysis Mode	Modo anál.	Mode	Modo anál.	Modo anál.
+DD04T	BORRA	TYP_ANALYZE_ACTIVATED	A	Analysis Activated	Análisis activado	Actv.	Análisis activado	Análisis activado
+DD04T	BORRA	TYP_ARE_ANALYZE_PACKAGES	A	Analysis Package Overview	Analysis of Packages	Analysis	Análisis paq.	Analysis of Packages
+DD04T	BORRA	TYP_ARE_BEGINN_PACKAGE	A	Start of Package Formation on Master	Inicio form.paq.maestro	Start Mstr	Start Master	Inicio form.paq.maestro
+DD04T	BORRA	TYP_ARE_BEGINN_TMSP_PACKAGE	A	Start of Package Formation on Master	Inicio form.paq.maestro	Start Mstr	Start Master	Inicio form.paq.maestro
+DD04T	BORRA	TYP_ARE_CLIENT_BEGIN	A	Start of Package Processing on Client	Inicio procesamiento paquetes cli.	Start Clnt	Start Client	Inicio procesamiento paquetes cli.
+DD04T	BORRA	TYP_ARE_CLIENT_BEGINT	A	Start of Package Processing on Client	Inicio procesamiento paquetes cli.	Start Clnt	Start Client	Inicio procesamiento paquetes cli.
+DD04T	BORRA	TYP_ARE_DELETABLE	A	Number of Deletable Objects	Número objetos borrables	Deletable	Deletable Objects	Número objetos borrables
+DD04T	BORRA	TYP_ARE_END_PACKAGE	A	End of Package Formation on Master	End of Package Formation on Master	End Master	End Pkg.Form. Master	Fin formación paq.master
+DD04T	BORRA	TYP_ARE_END_TMSP_PACKAGE	A	End of Package Formation on Master	End of Package Formation on Master	End Master	End Pkg.Form. Master	Fin formación paq.master
+DD04T	BORRA	TYP_ARE_MAX_TASKS	A	Maximum Number of Tasks	Número máximo tareas	Max. Tasks	Maximum No. of Tasks	Número máximo tareas
+DD04T	BORRA	TYP_ARE_OBJEKTE	A	Number of Business Objects	N.º objetos empresariales	Objects	BusinessObjects	N.º objetos empresariales
+DD04T	BORRA	TYP_BUSINESSVIEW	A	Business View	Vista empr.	Bus. View	Business View	Business View
+DD04T	BORRA	TYP_CNTOBJECTS	A	Number of Objects	Número objetos	Objects	Número objetos	Number of Objects
+DD04T	BORRA	TYP_CONDITIONAL_DELETING	A	Conditional Deletion	Borrado condic.	Condit.	Borrado condic.	Conditional Deletion
+DD04T	BORRA	TYP_CONGLOMERATE_CACHE_COUNTER	A	Counter for Conglomerate Cache	Contador p/caché conglomerado	Counter	Counter	Contador p/caché conglomerado
+DD04T	BORRA	TYP_EXPIRATION_DATE	A	Expiration Date	Fecha venc.	Date	Fecha venc.	Fecha venc.
+DD04T	BORRA	TYP_GENERAT	A	Generat Type	Tipo gener.	Gen. Type	Generat Type	Generat Type
+DD04T	BORRA	TYP_IGNITION	A	Preprocessing	Preproc	Preprocess	Preprocessing	Preprocessing
+DD04T	BORRA	TYP_LOGGING_BEGIN	A	Start of Logging	Start of Logging	Start Log.	Inicio reg.log	Start of Logging
+DD04T	BORRA	TYP_MAX_CNT_FLIGHTS	A	Maximum Number of Flights	Número máximo vuelos	Max. No.	Maximum No. Flights	Número máximo vuelos
+DD04T	BORRA	TYP_MODULE_COND_DELETE_CHECK	A	Module for Conditional Deletion	Módulo p/borrado condicional	Del.Module	Module Cond. Delet.	Módulo p/borrado condicional
+DD04T	BORRA	TYP_PACKAGENUMBER	A	Package Number	Nº paquete	Package	Package Number	Package Number
+DD04T	BORRA	TYP_PATTERN_EXCL1	A	Search String - Exclusive 1	String búsq.-exclus.1	Pattern E1	Patrón exclusivo 1	Pattern Exclusive 1
+DD04T	BORRA	TYP_PATTERN_EXCL2	A	Search String - Exclusive 2	String búsq.-exclus.2	Pattern E2	Patrón exclusivo 2	Pattern Exclusive 2
+DD04T	BORRA	TYP_P_ANALYZEMIGRATION	A	Migration Analysis	Migration Analysis	Mig. Anlys	Análisis migrac.	Migration Analysis
+DD04T	BORRA	TYP_P_COUNT	A	Number of Entries	Número entradas	Entries	Número entradas	Number of Entries
+DD04T	BORRA	TYP_P_IGNITION	A	Preprocessing	Preproc	Preprocess	Preprocessing	Preprocessing
+DD04T	BORRA	TYP_REJECTIONS	A	Rejection Reasons (Analysis)	Reasons for Rejection	Reasons	Motivos rechazo	Rejection Reasons
+DD04T	BORRA	TYP_REJECTION_TEXT	A	Description of Rejection Reason	Descripción motivo rechazo	Descriptn	Description	Description
+DD04T	BORRA	TYP_RESIDENCE_MIN	A	Minimum Residence Time	Tmpo.residencia mín.	Min. Res.	Minimum Res. Time	Tmpo.residencia mín.
+DD04T	BORRA	TYP_SFLIGHTAR_BOOKINGS	A	Number of Bookings	N.º de reservas	Bookings	N.º de reservas	Number of Bookings
+DD04T	BORRA	TYP_SPECIAL_SCENARIOS	A	Specific Additional Functions	Funciones adic.específicas	Specific	Specific Addl Fncts	Funciones adic.específicas
+DD04T	BORRA	TYP_UI_DISPLAY_ARCHIVE	A	Display from Archive	Visual. arch.	Display	Visual. arch.	Display from Archive
+DD04T	BORRA	TYP_UI_IGNITION	A	Preprocessing	Preproc	Preprocess	Preprocessing	Preprocessing
+DD04T	BORRA	TZEXSERVDESC	A	Description of TestZone Execution Server	Description of TestZone Execution Server	Descriptn	Descr. Exec. Server	Descr. servidor ejecución TestZone
+DD04T	BORRA	UCCHECK	A	Flag, if unicode check was performed	Unicode checks		Unicode checks	Unicode checks active
+DD04T	BORRA	UMC_Y_BLOBPARTDATA	A	Data of a part of the BLOB in the whole BLOB				
+DD04T	BORRA	UMC_Y_BLOBPARTLEN	A	Length of a part of the BLOB in the whole BLOB				
+DD04T	BORRA	UMC_Y_BLOBPARTPOS	A	Position of a Part of the BLOB in the Whole BLOB				
+DD04T	BORRA	UMK_Y_BWVAL	A	Company Master Data				Company Master Data
+DD04T	BORRA	UMPER	A	Changeover Period of Depreciation Key	ChPrd		Changeover Prd	Changeover Period
+DD04T	BORRA	USMD_BUSINESS_SYSTEM_ID	A	Business System				
+DD04T	BORRA	USMD_KEY_HANDLING	A	Type of Key Assignment	Type of Key Assignment		Key Assignment	Type of Key Assignment
+DD04T	BORRA	VARBZDAT	A	Variant for determining asset value date		Variant	Var. for val.date	Var. for detrm. val. date
+DD04T	BORRA	VERFR	A	Type of availability calculation		Avail.Calc	Avail. calc.	Availability calc.
+DD04T	BORRA	VIEWGRANT	A	Maintenance status (modif. authorization) for view data		Maint.stat	Maint. status	Maint. status
+DD04T	BORRA	VIEWVA_CTR	A	Maintenance view variant control	Dialog control		Dialog control	Dialog control
+DD04T	BORRA	VIS_ANZAHL	A	Number of documents to be displayed		No.docs	No. of docs	Number of documents
+DD04T	BORRA	VORNR	A	Operation/Activity Number		Oper./Act.	Oper./Act.	Operation/Activity
+DD04T	BORRA	VORNR_AUF	A	Operation Number		Operation	Operation	Operation
+DD04T	BORRA	VPRSV	A	Price Control Indicator		Price Ctrl	Price Control	Price Control
+DD04T	BORRA	VRSDG	A	Reason Code Conversion Version		Version	Rsn code conv.	Reason code conv.
+DD04T	BORRA	WKCMA	A	Employee's work city for EEA	EWC			
+DD04T	BORRA	WKDAY	A	PP Planning calendar: week day		Week day		
+DD04T	BORRA	WKDAY_TEXT	A	Text for week day		Week day		
+DD04T	BORRA	WKNUM	A	PP Planning calendar: number of the week day in the month		Counter	Counter wk day	Counter week day
+DD04T	BORRA	WOPKZ	A	Indicator: next/previous period		Next/prev.	Next/previous	Next/previous period
+DD04T	BORRA	XAFAR	A	Indicator: Errors in depreciation	Errors occurred when determining depreciation		Dep. has errors	Errors in deprec.
+DD04T	BORRA	XAUTO	A	Indicator: Line Item Automatically Created		Auto.Creat	Auto. Created	Line Item Automatically Created
+DD04T	BORRA	XBBBA	A	G/L account authorization check in purchase requisitions		PReq	Requisition	Purchase requisition
+DD04T	BORRA	XBEARB	A	Object was already edited		Edited	Edited	Edited
+DD04T	BORRA	XBPALE	A	Indicator: ALE for active business process (process costs)		BP ALE	ALE active BP	Bus.Proc. ALE active
+DD04T	BORRA	XCOPM_FPM	A	Payment Medium for Business Partner (Correspondence)	Payment medium for business part. (Correspondence)		Payment Medium	Payment Medium for Business Part.
+DD04T	BORRA	XDFYV	A	Allow Different Fiscal Year Variants		Diff.FYVar	Diff. FY Variant	Different Fiscal Year Variants
+DD04T	BORRA	XEDIP	A	Indicator: Send Payment Advices by EDI			Pmt adv. by EDI	Pmnt advice by EDI
+DD04T	BORRA	XEGLD	A	Indicator: European Union Member?		EU Country	EU Country	EU Member
+DD04T	BORRA	XEGMD	A	EC reporting country deleted				
+DD04T	BORRA	XEXTB	A	Indicator: Company code is in another system		Ext.CoCde	Ext. co. code	External co. code
+DD04T	BORRA	XEXTN	A	Indicator: External number assignment		Ext.no.ass	Ext. no. assgt.	External no. assgt.
+DD04T	BORRA	XFAT2	A	Fant. 2		F	F	F
+DD04T	BORRA	XFIBLG	A	Document comes from Financial Accounting		FI doc.	FI document	FI document
+DD04T	BORRA	XGSBER_ALL	A	Indicator: planning with all business areas		All bus.ar	All bus.areas	All business areas
+DD04T	BORRA	XKOAA	A	Indicator: Are postings to assets permitted?		Assets	Assets	
+DD04T	BORRA	XKOAK	A	Indicator: Are postings to vendor permitted?		Vendor	Vendor	
+DD04T	BORRA	XKOAM	A	Indicator: Are postings to material account permitted?				
+DD04T	BORRA	XMANU	A	X - Manual check	Manual check			Manual check
+DD04T	BORRA	XNEGA	A	Indicator: Negative values allowed		Negative	Negative val.allowed	Negative values allowed
+DD04T	BORRA	XO_CNS_APPL_ID	A	Application in Change Notification Service	Aplic. en Change Notification Service	Appl. ID	Application ID	Application in CNS
+DD04T	BORRA	XPPRCT	A	Indicator: Transfer trading partner profit center		Pa.prf.ctr		
+DD04T	BORRA	XPRCTR	A	Indicator: Transfer profit center		Prof.cntr		
+DD04T	BORRA	XPRFG	A	Document complete		Complete	Doc.complete	Document complete
+DD04T	BORRA	XSELP	A	Item selected (selected, chosen, ...)	S		Itm selected	Item selected
+DD04T	BORRA	XSPEA_ANKA	A	Indicator: Asset class is blocked		Centrally	Centrally	Asset class is blocked
+DD04T	BORRA	XSTAT	A	Processing status		Status	Proc. status	Processing status
+DD04T	BORRA	XUCODE	A	Password Hash Key	Password		Initial passwrd	Initial password
+DD04T	BORRA	XUZBVFLAG	A	CUA User Template: Logon Not Possible Here	CUA User Template		CUA User	CUA User Template
+TOTAL	BORRADAS	483

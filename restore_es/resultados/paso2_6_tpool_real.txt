@@ -1,0 +1,223 @@
+﻿MODO REAL
+# 95663 lineas BORRA_POOL omitidas (un programa por linea, pool S borrado entero)
+PROG	ACCION	QUITADAS	QUEDAN_SAP
+/1SDBF12L/RV14AK19	QUITA_LISTA	R		Discounts and Surcharges by Material
+ASTBKF01	QUITA_LISTA	R		Incluir
+ASTBKF01	QUITA_LISTA	R		Include
+MENUFERC	QUITA_LISTA	R		FI Accounts Receivable Menu
+MENUFKMN	QUITA_LISTA	R		Dummy
+MENUFSMN	QUITA_LISTA	R		FI Accounts Receivable Menu
+MENUKSMN	QUITA_LISTA	R		Application Menu: Profitability Analysis
+MW01VTOP	QUITA_LISTA	R		Datos globales
+MW01VTOP	QUITA_LISTA	R		Global data
+MW03AI00	QUITA_LISTA	I	021	Tax type
+MW03AI00	QUITA_LISTA	I	021	Tipo imp
+MW03AI00	QUITA_LISTA	I	022	Nº licencia
+MW03AI00	QUITA_LISTA	I	022	License number
+PCIEP305	QUITA_LISTA	R		Form routines
+PLAL0KR0	QUITA_LISTA	R		Data definition
+PLAL0KR1	QUITA_LISTA	R		Selection screen
+PLAL0KR2	QUITA_LISTA	R		Main program
+PLAL0KR3	QUITA_LISTA	R		Subroutine
+RFVZVABS	QUITA_LISTA	I	001	Release Criteria
+RFVZVABS	QUITA_LISTA	I	002	No Hits
+RFVZVABS	QUITA_LISTA	I	003	Objects being synchronized...
+RFVZVABS	QUITA_LISTA	I	004	Objects being deleted...
+RFVZVABS	QUITA_LISTA	I	011	Delete release data
+RFVZVABS	QUITA_LISTA	I	012	will be deleted
+RFVZVABS	QUITA_LISTA	I	014	Deletion of
+RFVZVABS	QUITA_LISTA	I	015	release object not permitted
+RFVZVABS	QUITA_LISTA	I	021	Date created
+RFVZVABS	QUITA_LISTA	I	022	Time
+RFVZVABS	QUITA_LISTA	I	023	Initiator
+RFVZVABS	QUITA_LISTA	R		Program RFVZFWF_SYNCHRONIZE
+RFVZVABS	QUITA_LISTA	S	S_DATUM	        Date created
+RFVZVABS	QUITA_LISTA	S	S_KEY1	        Key of Release Object
+RFVZVABS	QUITA_LISTA	S	S_SFGOBJ	        Release Object
+RFVZVABS	QUITA_LISTA	S	S_SFGST	        Current Release Status
+RFVZWPD1	QUITA_LISTA	I	001	Release Criteria
+RFVZWPD1	QUITA_LISTA	I	002	No Hits
+RFVZWPD1	QUITA_LISTA	I	003	Objects being synchronized...
+RFVZWPD1	QUITA_LISTA	I	004	Objects being deleted...
+RFVZWPD1	QUITA_LISTA	I	011	Delete release data
+RFVZWPD1	QUITA_LISTA	I	012	will be deleted
+RFVZWPD1	QUITA_LISTA	I	014	Deletion of
+RFVZWPD1	QUITA_LISTA	I	015	release object not permitted
+RFVZWPD1	QUITA_LISTA	I	021	Date created
+RFVZWPD1	QUITA_LISTA	I	022	Time
+RFVZWPD1	QUITA_LISTA	I	023	Initiator
+RFVZWPD1	QUITA_LISTA	R		Program RFVZFWF_SYNCHRONIZE
+RFVZWPD1	QUITA_LISTA	S	S_DATUM	        Date created
+RFVZWPD1	QUITA_LISTA	S	S_KEY1	        Key of Release Object
+RFVZWPD1	QUITA_LISTA	S	S_SFGOBJ	        Release Object
+RFVZWPD1	QUITA_LISTA	S	S_SFGST	        Current Release Status
+RFVZWPD2	QUITA_LISTA	I	001	Release Criteria
+RFVZWPD2	QUITA_LISTA	I	002	No Hits
+RFVZWPD2	QUITA_LISTA	I	003	Objects being synchronized...
+RFVZWPD2	QUITA_LISTA	I	004	Objects being deleted...
+RFVZWPD2	QUITA_LISTA	I	011	Delete release data
+RFVZWPD2	QUITA_LISTA	I	012	will be deleted
+RFVZWPD2	QUITA_LISTA	I	014	Deletion of
+RFVZWPD2	QUITA_LISTA	I	015	release object not permitted
+RFVZWPD2	QUITA_LISTA	I	021	Date created
+RFVZWPD2	QUITA_LISTA	I	022	Time
+RFVZWPD2	QUITA_LISTA	I	023	Initiator
+RFVZWPD2	QUITA_LISTA	R		Program RFVZFWF_SYNCHRONIZE
+RFVZWPD2	QUITA_LISTA	S	S_DATUM	        Date created
+RFVZWPD2	QUITA_LISTA	S	S_KEY1	        Key of Release Object
+RFVZWPD2	QUITA_LISTA	S	S_SFGOBJ	        Release Object
+RFVZWPD2	QUITA_LISTA	S	S_SFGST	        Current Release Status
+RKCMKCGD	QUITA_LISTA	R		SAP-EIS: Call Dialog Fiscal Year Maintenance
+ROOBP100	QUITA_LISTA	I	001	Full Run
+ROOBP100	QUITA_LISTA	I	002	Delta Run
+ROOBP100	QUITA_LISTA	I	003	Reference RunNo - Profile - Variant
+ROOBP100	QUITA_LISTA	I	004	Simulation
+ROOBP100	QUITA_LISTA	I	005	PUSH-table
+ROOBP100	QUITA_LISTA	I	006	Mailing List
+ROOBP100	QUITA_LISTA	I	007	Maintenance Orders
+ROOBP100	QUITA_LISTA	I	B01	Profile/Variant (choose one only)
+ROOBP100	QUITA_LISTA	I	B02	Run mode
+ROOBP100	QUITA_LISTA	I	B03	Output
+ROOBP100	QUITA_LISTA	I	B04	PUSH/PULL Method
+ROOBP100	QUITA_LISTA	R		Software Maintenance Process
+ROOBP100	QUITA_LISTA	S	E_AUTO	        PUSH/PULL based on PUSH table
+ROOBP100	QUITA_LISTA	S	E_DELTA	        Delta Run
+ROOBP100	QUITA_LISTA	S	E_FULL	        Full Run
+ROOBP100	QUITA_LISTA	S	E_PROFIL	        Profile
+ROOBP100	QUITA_LISTA	S	E_PULL	        All PULL
+ROOBP100	QUITA_LISTA	S	E_PUSH	        All PUSH
+ROOBP100	QUITA_LISTA	S	E_REAL	        Create Notification Orders
+ROOBP100	QUITA_LISTA	S	E_SAMMG	        Reference RunNo
+ROOBP100	QUITA_LISTA	S	E_SIMU	        Simulation
+ROOBP100	QUITA_LISTA	S	E_VARIA	        Variant
+RPCTRCUP	QUITA_LISTA	R		Selection Parameters
+SAPL0KKD	QUITA_LISTA	I	001	Version w/o Customizing
+SAPL0KKD	QUITA_LISTA	R		Layer between product costing and Customizing
+SAPL0KO2	QUITA_LISTA	I	001	Version w/o Customizing
+SAPL0KO2	QUITA_LISTA	R		Layer between product costing and Customizing
+SAPLATPS	QUITA_LISTA	I	001	Name
+SAPLATPS	QUITA_LISTA	I	002	Date
+SAPLATPS	QUITA_LISTA	I	003	Time
+SAPLATPS	QUITA_LISTA	I	004	Creation Date
+SAPLATPS	QUITA_LISTA	I	005	Creation Time
+SAPLATPS	QUITA_LISTA	I	007	Position in File
+SAPLATPS	QUITA_LISTA	I	012	Set Filter...
+SAPLATPS	QUITA_LISTA	I	013	Unknown
+SAPLATPS	QUITA_LISTA	I	014	Delete List
+SAPLATPS	QUITA_LISTA	I	015	Delete Selected Entries
+SAPLATPS	QUITA_LISTA	I	016	Save for Background Search
+SAPLATPS	QUITA_LISTA	I	017	Load Search Results
+SAPLATPS	QUITA_LISTA	I	018	Refresh
+SAPLATPS	QUITA_LISTA	I	019	Delete Entry
+SAPLATPS	QUITA_LISTA	I	020	Enter Description
+SAPLATPS	QUITA_LISTA	I	021	No Search Results Yet
+SAPLATPS	QUITA_LISTA	I	022	Search Results Exist
+SAPLATPS	QUITA_LISTA	I	023	Delete Messages
+SAPLATPS	QUITA_LISTA	I	024	Layout Management
+SAPLATPS	QUITA_LISTA	I	025	Search (Definition)
+SAPLATPS	QUITA_LISTA	I	026	Authorization Check
+SAPLATPS	QUITA_LISTA	I	027	Search (Process)
+SAPLATPS	QUITA_LISTA	I	029	Details for Table &
+SAPLATPS	QUITA_LISTA	I	030	Table Statistics
+SAPLATPS	QUITA_LISTA	I	102	Column
+SAPLATPS	QUITA_LISTA	I	103	Contents
+SAPLATPS	QUITA_LISTA	I	104	Create Filter
+SAPLATPS	QUITA_LISTA	I	105	Display All Archive Files
+SAPLATPS	QUITA_LISTA	I	300	Object/Session/File
+SAPLATPS	QUITA_LISTA	I	400	Archiving Object/Archiving Session/Archive File
+SAPLATPS	QUITA_LISTA	S	%%DYN001	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN002	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN003	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN004	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN005	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN006	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN007	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN008	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN009	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN010	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN011	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN012	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN013	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN014	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN015	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN016	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN017	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN018	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN019	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN020	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN021	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN022	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN023	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN024	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN025	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN026	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN027	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN028	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN029	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN030	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN031	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN032	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN033	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN034	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN035	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN036	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN037	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN038	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN039	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN040	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN041	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN042	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN043	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN044	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN045	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN046	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN047	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN048	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN049	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN050	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN051	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN052	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN053	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN054	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN055	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN056	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN057	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN058	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN059	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN060	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN061	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN062	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN063	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN064	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN065	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN066	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN067	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN068	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN069	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN070	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN071	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN072	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN073	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN074	        Generic Selection
+SAPLATPS	QUITA_LISTA	S	%%DYN075	        Generic Selection
+SAPLFBZP	QUITA_LISTA	I	001	Relationships Between Application Types
+SAPLFBZP	QUITA_LISTA	I	002	Application Type
+SAPLFBZP	QUITA_LISTA	I	003	Relevant for
+SAPLFBZP	QUITA_LISTA	I	004	Do you want to save your data first?
+SAPLFBZP	QUITA_LISTA	I	005	Query Before Save
+SAPLFBZP	QUITA_LISTA	R		BCA: Applications for parallel processing
+SAPLKO14	QUITA_LISTA	I	001	Maintain settings
+SAPLKO14	QUITA_LISTA	I	002	Do you want to cancel
+SAPLKO14	QUITA_LISTA	I	003	settings maintenance?
+SAPLKO14	QUITA_LISTA	I	004	Do you want to save the
+SAPLKO14	QUITA_LISTA	I	005	settings?
+SAPLKO14	QUITA_LISTA	I	010	Plan reconciliation/target=actl.IAA
+SAPLKWA2	QUITA_LISTA	R		Search for Cost Centers in Cycles and Segments
+SAPLRKSR	QUITA_LISTA	I	001	Create IMG structure: enter name
+SAPLRKSR	QUITA_LISTA	I	101	Choose Hierarchy
+SAPLRKSR	QUITA_LISTA	I	102	Hierarchy Number
+SAPLRKSR	QUITA_LISTA	I	103	Hierarchy
+SAPLSZA3	QUITA_LISTA	I	001	Postal code
+SAPLSZA3	QUITA_LISTA	I	002	PO Box postal code
+SAPLSZA3	QUITA_LISTA	I	003	Company postal code
+TOTAL	POOLS_BORRADOS	95663	ENTRADAS_QUITADAS	1420730
