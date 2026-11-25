@@ -146,6 +146,32 @@ E y D no cambiaron en ninguna tabla. ST22 sin dumps de las corridas reales.
 
 Los intermedios (`BAS_20261123_190644`, `paso1`, `paso2`) se descartaron: todo lo borrado eran copias del inglés y se puede regenerar con un complemento SMLT, y la traducción está en los lotes de las carpetas `traduccion_SAP` y `ztrad_rfc_files`.
 
+### Cómo hacer un dump comprimido
+
+1. Copiar `sql/15_dump_bas_final.sql` con otro número y cambiar el nombre del archivo de salida:
+
+   ```sql
+   dump database BAS to 'C:\backup-SYB\BAS_AAAAMMDD.dmp' with compression = 1
+   ```
+
+2. Correrlo desde la carpeta `restore_es` (`isql` pide la clave de `sapsa`):
+
+   ```
+   correr_sql.bat sql\16_dump_bas.sql
+   ```
+
+3. Revisar el `.log`: tiene que terminar con `DUMP is complete` y sin `Msg`. Con `compression = 1` el dump de `BAS` pesa unos 20 GB (sin comprimir, unos 52 GB) y tarda unos 25 minutos. SAP puede quedar arriba.
+4. Hacer también un dump nuevo de `master` y `saptools` con `C:\backup-SYB\dump_saptools_master.bat`, sobre todo si cambió algo en Sybase (usuarios, configuración, dispositivos).
+
+Para restaurar no hace falta ninguna opción de compresión: `load database` la detecta sola. Con SAP detenido:
+
+```sql
+load database BAS from 'C:\backup-SYB\BAS_AAAAMMDD.dmp'
+go
+online database BAS
+go
+```
+
 ## Lecciones
 
 - **Piloto antes de cada grupo** y test de nuevo después: con el mismo programa, el segundo test tiene que dar 0.
